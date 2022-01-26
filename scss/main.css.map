@@ -12,6 +12,7 @@
         "layout/_footer.scss",
         "layout/_header.scss",
         "layout/_navigation.scss",
+        "layout/_main_section.scss",
         "pages/_itineraire.scss",
         "pages/_infos-pratiques.scss",
         "pages/_home.scss"
