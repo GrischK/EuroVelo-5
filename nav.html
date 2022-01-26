@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="head">
         <nav>
             <ul class="nav">
 
@@ -25,16 +25,21 @@
             </ul>
         </nav>
 
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <figure class="swiper-slide"><img src="img/patrimoine-remarquable_news_image_top.jpg" alt=""></figure>
-                <figure class="swiper-slide"><img src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg" alt="">
-                </figure>
-                <figure class="swiper-slide"><img src="img/St_omer_cathedrale_ND.jpg" alt=""></figure>
-
-                <figure class="swiper-pagination"></figure>
+        <div id="slider-wrapper">
+            <div class="inner-wrapper">
+              <input checked type="radio" name="slide" class="control" id="Slide1" />
+              <label for="Slide1" id="s1"></label>
+              <input type="radio" name="slide" class="control" id="Slide2" />
+              <label for="Slide2" id="s2"></label>
+              <input type="radio" name="slide" class="control" id="Slide3" />
+              <label for="Slide3" id="s3"></label>
+              <div class="overflow-wrapper">
+                <a class="slide" href=""><img src="img/patrimoine-remarquable_news_image_top.jpg" /></a>
+                <a class="slide" href=""><img src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg" /></a>
+                <a class="slide" href=""><img src="img/St_omer_cathedrale_ND.jpg" /></a>
+              </div>
             </div>
-        </div>
+          </div>
     </header>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
