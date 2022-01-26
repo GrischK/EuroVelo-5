@@ -1,0 +1,28 @@
+main{
+    h2{
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 1.75rem;
+        color: $CouleurTitresSombres;
+    }
+    p{
+        text-align: center;
+        font-family: 'Mukta Mahee',sans-serif;
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: $CouleurParagraphes;
+    }
+    #presentation{
+        @include flex_column;
+        img{
+            width: 200px;
+        }
+    }
+    form{
+        @include flex_column;
+        width: 300px;
+        background: $CouleurBoutonsVert;
+    }
+    
+}
+
