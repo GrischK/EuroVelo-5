@@ -1,0 +1,44 @@
+main{
+    h2{
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 1.75rem;
+        color: $CouleurTitresSombres;
+    }
+    p{
+        font-family: 'Mukta Mahee',sans-serif;
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: $CouleurParagraphes;
+    }
+    #presentation{
+        @include flex_column;
+        img{
+            width: 200px;
+        }
+    }
+    form{
+        @include flex_column;
+        width: 300px;
+        height: 300px;
+        background: $CouleurBoutonsVert;
+        button, select{
+            height: 40px;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        legend{
+            color:$PoliceBlanche;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    article{
+        margin-top: 50px;
+    }
+
+    .blocs_en_ligne{
+        @include flex_space-around;
+    }
+}
