@@ -11,47 +11,52 @@
 </head>
 <body>
     <main>
-        <article id="presentation">
-            <h2>
-                La VéloCharbon.
-            </h2>
-            <p>
-                La VéloCharbon est un itinéraire qui part de Calais, jusqu’à Lille et la Belgique en passant par le marais Audomarois. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-            </p>
-            <img src="img/pictos-velodyssee3.jpg" alt="icones">
-            <form>
-                <legend>Pédalez selon vos envies</legend>
-                <label for="difficultes"></label>
-                <select id="difficultes">
-                    <option value="">Toutes les difficultés</option>    
-                    <option value="debutant">Je débute/En famille</option>    
-                    <option value="intermediare">J'ai l'habitude</option>
-                    <option value="confirme">Je me dépasse</option>
-                </select>
-                <label for="duree"></label>
-                <select id="difficultes">
-                    <option value="">Toutes les durées</option>    
-                    <option value="journee">Journée</option>    
-                    <option value="long">Long séjour (+7 jours)</option>
-                    <option value="semaine">A la semaine</option>
-                    <option value="court">Court séjour (3 à 5 jours)</option>
-                    <option value="weekend">Week-end</option>
-                </select>
-                <label for="thematiques"></label>
-                <select id="thematiques">
-                    <option value="">Toutes les thématiques</option>    
-                    <option value="littoral">Le littoral</option>    
-                    <option value="nature">Nature et patrimoine</option>
-                    <option value="aufil">Au fil de l'eau</option>
-                    <option value="forets">Forêts et landes</option>
-                    <option value="famille">En famille</option>
-                    <option value="vignobles">Vignobles et gastronomie</option>
-                    <option value="Panoramas">Panoramas</option>
-                </select>
-                <button type="submit">Trouver mon parcours idéal</button>
-            </form>
+        <article class="BlocsReduits" id="BlocPresentationCarte">
+            <section id="presentation">
+                <h2>
+                    La VéloCharbon.
+                </h2>
+                <p>
+                    La VéloCharbon est un itinéraire qui part de Calais, jusqu’à Lille et la Belgique en passant par le marais Audomarois. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                </p>
+                <img src="img/pictos-velodyssee3.jpg" alt="icones">
+                <form>
+                    <legend>Pédalez selon vos envies</legend>
+                    <label for="difficultes"></label>
+                    <select id="difficultes">
+                        <option value="">Toutes les difficultés</option>    
+                        <option value="debutant">Je débute/En famille</option>    
+                        <option value="intermediare">J'ai l'habitude</option>
+                        <option value="confirme">Je me dépasse</option>
+                    </select>
+                    <label for="duree"></label>
+                    <select id="difficultes">
+                        <option value="">Toutes les durées</option>    
+                        <option value="journee">Journée</option>    
+                        <option value="long">Long séjour (+7 jours)</option>
+                        <option value="semaine">A la semaine</option>
+                        <option value="court">Court séjour (3 à 5 jours)</option>
+                        <option value="weekend">Week-end</option>
+                    </select>
+                    <label for="thematiques"></label>
+                    <select id="thematiques">
+                        <option value="">Toutes les thématiques</option>    
+                        <option value="littoral">Le littoral</option>    
+                        <option value="nature">Nature et patrimoine</option>
+                        <option value="aufil">Au fil de l'eau</option>
+                        <option value="forets">Forêts et landes</option>
+                        <option value="famille">En famille</option>
+                        <option value="vignobles">Vignobles et gastronomie</option>
+                        <option value="Panoramas">Panoramas</option>
+                    </select>
+                    <button type="submit">Trouver mon parcours idéal</button>
+                </form>
+            </section>
+            <section id="carte">
+                <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=fr&amp;q=+(Nom%20de%20votre%20%C3%A9tablissement)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" frameborder="0"></iframe><a href="https://visite360pro.com/">Visite 360 Pro le Spécialiste de la visite virtuelle Google pour les pros</a></div>
+            </section>
         </article>
-        <article id="TrouverVelo">
+        <article id="TrouverVelo"  class="BlocsReduits">
             <h2>
                 Trouver mon Accueil vélo
             </h2>
@@ -93,7 +98,7 @@
                 Tous les témoignages
             </button>
         </article>
-        <article class="BlocsContenuCentre">
+        <article class="BlocsContenuCentre BlocsReduits">
             <h2>
                 Les derniers avis publiés !
             </h2>
@@ -107,7 +112,7 @@
                 <div></div>
             </section>
         </article>
-        <article class="BlocsContenuCentre">
+        <article class="BlocsContenuCentre BlocsReduits">
             <h2>
                 La douceur du Nord à portée de roues !
             </h2>
