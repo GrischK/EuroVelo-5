@@ -86,12 +86,22 @@ main{
         }
     }
 
+    .bloc_conteneur{
+        position: relative;
+        width: 100%;
+        z-index: -1;
+    }
+    
     #Experiences{
+        position: absolute;
+        z-index: 1;
         @include flex_column;
         @include bloc_presentation_taille;
-        background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
         justify-content: space-between;
         color: $PoliceBlanche;
+        top: 50%;
+        transform: translateY(-50%);
+        
         section{
             width: 100%;
             display: flex;
@@ -120,7 +130,7 @@ main{
     #PartezEnVoyage{
         @include flex_column;
         @include bloc_presentation_taille;
-        background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
+        background-image: url(/img/landscape2.jpg);
         justify-content: space-between;
         h2,p{
             color: $PoliceBlanche;
