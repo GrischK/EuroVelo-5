@@ -61,6 +61,37 @@ section {
 .box:hover {
   img {
     filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+  }
+  h1 {
+    bottom: 70px;
+  }
+}
+.button {
+  width: 75vw;
+  margin: -3% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+    &:nth-child(1) {
+      background-color: $PoliceBlanche;
+      border: 2.5px solid $CouleurTitresSombres;
+      color: $CouleurTitresSombres;
+    }
+    &:nth-child(2) {
+      background-color: $CouleurTitresSombres;
+      color: $PoliceBlanche;
+    }
   }
 }
