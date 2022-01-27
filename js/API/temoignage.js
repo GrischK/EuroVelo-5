@@ -20,7 +20,7 @@ function renderData(data) {
     const content = `
 
             <div class="box">
-            <img src="${url}${r.data[n].attributes.image.data[n].attributes.url}" alt="image" />
+            <img src="${url}${r.data[n].attributes.image.data.attributes.url}" alt="image" />
             <h1>${r.data[n].attributes.titre}</h1>
           </div>
     `;
