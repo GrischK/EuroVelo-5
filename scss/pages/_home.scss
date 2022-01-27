@@ -26,20 +26,19 @@ main{
     form{
         @include flex_column;
         width: 300px;
-        height: 300px;
+        height: 350px;
         background: $CouleurBoutonsVert;
-        button, select{
-            height: 40px;
-            width: 100%;
-            max-width: 100%;
-            margin-top: 20px;
+        box-shadow: 2px 2px 10px grey;
+        border-radius: 5px;    
+        align-items: center;
+        justify-content: space-evenly;
         }
         legend{
             color:$PoliceBlanche;
             font-weight: bold;
             text-align: center;
         }
-    }
+    
     article{
         margin-top: 50px;
     }
@@ -73,14 +72,44 @@ main{
 
     #Experiences{
         @include flex_column;
+        @include bloc_presentation_taille;
         background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
-        width: 100%;
-        height: 500px;
         justify-content: space-between;
+        color: $PoliceBlanche;
         section{
             width: 100%;
             display: flex;
             justify-content: space-around;   
+        }
+        h2,p{
+            color: $PoliceBlanche;
+            margin-left: 10%;
+            width: 80%;
+        }
+    }
+
+    .BlocsContenuCentre{
+        @include flex_column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Grille_main{
+        width: 100%;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #PartezEnVoyage{
+        @include flex_column;
+        @include bloc_presentation_taille;
+        background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
+        justify-content: space-between;
+        h2,p{
+            color: $PoliceBlanche;
+            margin-left: 10%;
+            width: 80%;
         }
     }
 }

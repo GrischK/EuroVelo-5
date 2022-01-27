@@ -1,0 +1,28 @@
+form{
+    button{
+        border-radius: 5px;
+        border: $CouleurTitresSombres;
+        background-color: $CouleurTitresSombres;
+        color: $PoliceBlanche;
+        width: 95%;
+        height: 40px;
+        margin-top: 20px;
+    }
+    select{
+        border-radius: 5px;
+        width: 95%;
+        height: 40px;
+        margin-top: 20px;
+    }
+}
+
+.BoutonTransparent{
+    border-radius: 5px;
+    width: 200px;
+    color: $PoliceBlanche;
+    border: 1px solid white;
+    background: none;
+    height: 40px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
