@@ -47,4 +47,41 @@ main{
     .blocs_en_ligne{
         @include flex_space-around;
     }
+
+    #TrouverVelo{
+        ul{
+            list-style: none;
+            li{
+                position: relative;
+                img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;    
+                }
+                .TexteSurPhoto{
+                    position: absolute;
+                    color:$PoliceBlanche;
+                    z-index: 1;
+                    left: 50%;
+                    top: 35%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #Experiences{
+        background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;   
+        }
+    }
 }
