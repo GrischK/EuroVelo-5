@@ -8,7 +8,7 @@ init();
 
 function init() {
   getNews();
-  renderData()
+  renderData();
 }
 
 function convertInFrenchDateString(dateString) {
@@ -17,9 +17,9 @@ function convertInFrenchDateString(dateString) {
 }
 
 function renderData(data) {
-    r = Object(data)
-    for (let n in r.data){
-        const dateFR = convertInFrenchDateString(r.data[n].attributes.date);
+  r = Object(data);
+  for (let n in r.data) {
+    const dateFR = convertInFrenchDateString(r.data[n].attributes.date);
 
     const content = `
 
@@ -34,16 +34,15 @@ function renderData(data) {
     `;
 
     info.innerHTML += content;
-    }
+  }
 }
 
 function getNews() {
   fetch(`${url}/api/eurovelos?populate=*`)
     .then((data) => data.json())
     .then((result) => {
-        dataResult = result;
+      dataResult = result;
       console.log("dataResult", dataResult);
       renderData(dataResult);
     });
 }
-

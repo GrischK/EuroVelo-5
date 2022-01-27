@@ -2,17 +2,14 @@
 @import "base/normalize";
 @import "base/typo";
 
-
 // ABSTRACTS
 @import "abstracts/animation";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
 // COMPONENTS
 @import "components/button";
 @import "components/images";
-
 
 // LAYOUT
 @import "layout/footer";
@@ -20,12 +17,9 @@
 @import "layout/navigation";
 @import "layout/main_section";
 
-
 // PAGE
 @import "pages/itineraire";
 @import "pages/infos-pratiques";
 @import "pages/home";
 @import "pages/news";
-
-
-
+@import "pages/temoignage";
