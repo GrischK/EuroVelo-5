@@ -72,11 +72,10 @@ main{
     }
 
     #Experiences{
+        @include flex_column;
         background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
         width: 100%;
         height: 500px;
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
         section{
             width: 100%;
