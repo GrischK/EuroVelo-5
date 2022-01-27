@@ -72,9 +72,8 @@ main{
 
     #Experiences{
         @include flex_column;
+        @include bloc_presentation_taille;
         background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
-        width: 100%;
-        height: 500px;
         justify-content: space-between;
         color: $PoliceBlanche;
         section{
@@ -84,6 +83,8 @@ main{
         }
         h2,p{
             color: $PoliceBlanche;
+            margin-left: 10%;
+            width: 80%;
         }
     }
 
@@ -98,5 +99,17 @@ main{
         display: grid;
         gap: 30px;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #PartezEnVoyage{
+        @include flex_column;
+        @include bloc_presentation_taille;
+        background-image: url(/img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg);
+        justify-content: space-between;
+        h2,p{
+            color: $PoliceBlanche;
+            margin-left: 10%;
+            width: 80%;
+        }
     }
 }

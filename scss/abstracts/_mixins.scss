@@ -7,3 +7,8 @@
     display: flex;
     justify-content: space-around;
 } 
+
+@mixin bloc_presentation_taille {
+    width: 100%;
+    height: 500px;
+}
