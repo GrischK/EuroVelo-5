@@ -24,7 +24,7 @@ function renderData(data) {
     const content = `
 
             <div class="item">
-                <img src="${url}${r.data[n].attributes.images.data.attributes.url}" alt="">
+                <img src="${url}${r.data[n].attributes.images.data.attributes.url}" alt="iamge de présentation">
                 <div class="flex-box">
                     <h3>${dateFR}</h3>
                     <h1>${r.data[n].attributes.title}</h1>
