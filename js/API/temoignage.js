@@ -1,6 +1,4 @@
-// r.data[1].attributes.title  : Ligne a utiliser pour recup element
-
-const info = document.querySelector(".grille");
+const info = document.querySelector(".grid");
 const url = "http://195.14.105.18:1337";
 let dataResult = [];
 
@@ -19,18 +17,12 @@ function convertInFrenchDateString(dateString) {
 function renderData(data) {
   r = Object(data);
   for (let n in r.data) {
-    const dateFR = convertInFrenchDateString(r.data[n].attributes.date);
-
     const content = `
 
-            <div class="item">
-                <img src="${url}${r.data[n].attributes.images.data.attributes.url}" alt="">
-                <div class="flex-box">
-                    <h3>${dateFR}</h3>
-                    <h1>${r.data[n].attributes.title}</h1>
-                </div>
-                <p>${r.data[n].attributes.description}</p>
-            </div>
+            <div class="box">
+            <img src="${url}${r.data[n].attributes.image.data[n].attributes.url}" alt="image" />
+            <h1>${r.data[n].attributes.titre}</h1>
+          </div>
     `;
 
     info.innerHTML += content;
@@ -38,7 +30,7 @@ function renderData(data) {
 }
 
 function getNews() {
-  fetch(`${url}/api/eurovelos?populate=*`)
+  fetch(`${url}/api/temoignages?populate=*`)
     .then((data) => data.json())
     .then((result) => {
       dataResult = result;
