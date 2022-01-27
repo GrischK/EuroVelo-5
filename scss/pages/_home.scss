@@ -20,11 +20,9 @@ main{
         margin-top: 100px;
     }
 
-    #carte{
+    #map{
+        height: 800px;
         width: 50%;
-        height: 100%;
-        box-sizing: border-box;
-        padding-left: 10px;
     }
 
     #BlocPresentationCarte{
@@ -40,6 +38,7 @@ main{
             width: 200px;
         }
     }
+
     form{
         @include flex_column;
         width: 300px;
