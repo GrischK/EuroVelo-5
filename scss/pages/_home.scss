@@ -59,6 +59,10 @@ main{
             border: none;
             align-items: center;
             justify-content: space-evenly;
+            p{
+                text-align: center;
+                color: $PoliceBlanche;
+            }
         }
         legend{
             color:$PoliceBlanche;
@@ -84,9 +88,14 @@ main{
                     align-items: center;
                     justify-content: center;    
                 }
+                .TrouverMonVelo:hover{
+                    opacity: 0.3;
+                    filter: blur(1px);
+                }
                 .TexteSurPhoto{
                     position: absolute;
-                    color:$PoliceBlanche;
+                    color:$CouleurTitresSombres;
+                    font-weight: bold;
                     z-index: 1;
                     left: 50%;
                     top: 35%;

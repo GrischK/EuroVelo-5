@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="scss/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
+    <link rel="stylesheet" href="scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <title>Accueil</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="head">
-        <nav>
-            <ul class="nav">
+      <nav>
+        <ul class="nav">
+            <li>
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
 
-            </ul>
+        <ul class="subnav"></ul>
+      </nav>
 
-            <ul class="subnav">
+      <div class="slideshow">
+        <input
+          type="radio"
+          id="button-1"
+          name="radio-set"
+          class="selecteur-1"
+          checked="checked"
+        />
+        <label for="button-1" class="button-label-1"></label>
 
-            </ul>
-        </nav>
+        <input
+          type="radio"
+          id="button-2"
+          name="radio-set"
+          class="selecteur-2"
+        />
+        <label for="button-2" class="button-label-2"></label>
 
-        <div id="slider-wrapper">
-            <div class="inner-wrapper">
-              <input checked type="radio" name="slide" class="control" id="Slide1" />
-              <label for="Slide1" id="s1"></label>
-              <input type="radio" name="slide" class="control" id="Slide2" />
-              <label for="Slide2" id="s2"></label>
-              <input type="radio" name="slide" class="control" id="Slide3" />
-              <label for="Slide3" id="s3"></label>
-              <div class="overflow-wrapper">
-                <a class="slide" href=""><img src="img/patrimoine-remarquable_news_image_top.jpg" /></a>
-                <a class="slide" href=""><img src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg" /></a>
-                <a class="slide" href=""><img src="img/St_omer_cathedrale_ND.jpg" /></a>
-              </div>
-            </div>
-          </div>
+        <input
+          type="radio"
+          id="button-3"
+          name="radio-set"
+          class="selecteur-3"
+        />
+        <label for="button-3" class="button-label-3"></label>
+
+
+        <label for="button-1" class="sp-arrow sp-a1"></label>
+        <label for="button-2" class="sp-arrow sp-a2"></label>
+        <label for="button-3" class="sp-arrow sp-a3"></label>
+
+        <div class="contenu">
+          <ul class="slider clearfix">
+            <li><img src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg" alt="image01" /></li>
+            <li><img src="img/patrimoine-remarquable_news_image_top.jpg" alt="image02" /></li>
+            <li><img src="img/St_omer_cathedrale_ND.jpg" alt="image03" /></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
-</body>
-
+  </body>
 </html>

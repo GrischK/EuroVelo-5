@@ -15,7 +15,6 @@ header h1 {
   }
 }
 
-
 header h3 {
   margin-top: 4%;
   text-align: center;
@@ -103,11 +102,13 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   gap: 30px;
+  height: max-content;
+  width: 100vw;
 
   .card {
     background-color: $BgBlancSombre;
     width: auto;
-    height: auto;
+    height: max-content;
     padding: 30px;
     position: relative;
 
