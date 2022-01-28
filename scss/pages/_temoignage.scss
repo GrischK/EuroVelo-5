@@ -22,17 +22,15 @@ header h3 {
   font-size: 1em;
 }
 
-section {
-  width: 75vw;
-  height: auto;
-  margin: 5% auto;
-}
+
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  width: 100%;
 }
+
 
 .box {
   width: 100%;
@@ -185,7 +183,7 @@ section {
       justify-content: space-between;
       width: 85%;
       right: 50%;
-      left: 48%;
+      left: 47%;
       transform: translate(-50%);
       margin: 0 auto;
       position: absolute;

@@ -9,11 +9,13 @@ init();
 function init() {
   getNews();
   renderData();
+  convertInFrenchDateString("2022-01-19T14:30:00.000Z")
 }
 
 function convertInFrenchDateString(dateString) {
   const dateFragments = dateString.split("-");
   return `${dateFragments[2]}/${dateFragments[1]}/${dateFragments[0]}`;
+
 }
 
 function renderData(data) {

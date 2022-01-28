@@ -57,11 +57,12 @@ function getNews1() {
 function renderData1(data) {
   a = Object(data);
   for (let x in a.data) {
+    var time = a.data[x].attributes.heure.split(":00.000").join(' ')
     const content1 = `
 
             <div class="card">
             <div class="card-heure">
-              <h4>${a.data[x].attributes.Date}</h4>
+              <h4>${convertInFrenchDateString(a.data[x].attributes.Date)} ${time}</h4>
             </div>
             <div class="card-infos">
               <h1>${a.data[x].attributes.Prenom}</h1>
