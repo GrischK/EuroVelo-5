@@ -30,45 +30,41 @@ gpx_options: {
   map.fitBounds(e.target.getBounds());
 }).addTo(map);
 
-const temoignages = document.querySelector(".cycliste1");
+const info = document.querySelector(".temoignage_conteneur");
 const url = "http://195.14.105.18:1337";
-let vignettes = [];
+let dataResult = [];
 
-function init(){
-  getVignettes();
-}  
+init();
 
-function getVignettes(){
-  fetch('${url}/api/temoignages-cartes2')
-    .then(data => data.json())
-    .then(result => {
-      vignettes = result;
-      console.log("vignettes", vignettes);
-    })
-    .catch(err => {
-      console.error(err);
-    });
+function init() {
+  getNews();
+  renderData();
 }
 
-const avis = document.querySelector(".avis");
-const url_avis = "http://195.14.105.18:1337";
-let vignettes_avis = [];
+function renderData(data) {
+  r = Object(data);
+  for (let n in r.data) {
 
-function init(){
-  getVignettes();
-}  
+    const content = `
+    <div class="temoignage_bloc">
+      <img src="${url}${r.data[n].attributes.Photo.data.attributes.url}" alt="cycliste" class="cycliste1">
+      <div class="info_temoignages">
+          <h1>${r.data[n].attributes.Titre}</h1>
+          <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+      </div>
+    </div>
+    `;
 
-function getVignettes(){
-  fetch('${url}/api/temoignages-cartes2')
-    .then(data => data.json())
-    .then(result => {
-      vignettes_avis = result;
-      console.log("vignettes_avis", vignettes_avis);
-    })
-    .catch(err => {
-      console.error(err);
-    });
+    info.innerHTML += content;
+  }
 }
 
-
-console.log('hello');
+function getNews() {
+  fetch(`${url}/api/temoignages-cartes2?populate=*`)
+    .then((data) => data.json())
+    .then((result) => {
+      dataResult = result;
+      console.log("dataResult", dataResult);
+      renderData(dataResult);
+    });
+}

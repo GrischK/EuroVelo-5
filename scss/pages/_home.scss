@@ -110,7 +110,27 @@ main{
         position: relative;
         width: 100%;
         z-index: 0;
-    }
+        #experiences_photos{
+            display: flex;
+            width: 100%;
+            .temoignage_bloc{
+                height: auto;
+                position: relative;
+                .temoignage_bloc img{
+                    width: 100vw;
+                }
+                .info_temoignages{
+                    position: absolute;
+                    @include flex_column;
+                    width: 100%;
+                    top: 170px;
+                    h1{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }    
     
     #Experiences{
         position: absolute;
