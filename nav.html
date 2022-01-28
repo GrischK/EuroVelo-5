@@ -17,31 +17,52 @@
   <body>
     <header class="head">
       <nav>
-        <ul class="nav"></ul>
+        <ul class="nav">
+            <li>
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
 
         <ul class="subnav"></ul>
       </nav>
 
-      <div class="slider">
-        <div class="slider-nav">
-          <a href="#img1"></a>
-          <a href="#img2"></a>
-          <a href="#img3"></a>
-        </div>
-        <div class="slider-viewport">
-          <div id="img1">
-            <div id="img2">
-              <div id="img3">
-                <div class="slider-content">
-                  <img
-                    src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg"
-                  />
-                  <img src="img/patrimoine-remarquable_news_image_top.jpg" />
-                  <img src="img/St_omer_cathedrale_ND.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="slideshow">
+        <input
+          type="radio"
+          id="button-1"
+          name="radio-set"
+          class="selecteur-1"
+          checked="checked"
+        />
+        <label for="button-1" class="button-label-1"></label>
+
+        <input
+          type="radio"
+          id="button-2"
+          name="radio-set"
+          class="selecteur-2"
+        />
+        <label for="button-2" class="button-label-2"></label>
+
+        <input
+          type="radio"
+          id="button-3"
+          name="radio-set"
+          class="selecteur-3"
+        />
+        <label for="button-3" class="button-label-3"></label>
+
+
+        <label for="button-1" class="sp-arrow sp-a1"></label>
+        <label for="button-2" class="sp-arrow sp-a2"></label>
+        <label for="button-3" class="sp-arrow sp-a3"></label>
+
+        <div class="contenu">
+          <ul class="slider clearfix">
+            <li><img src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg" alt="image01" /></li>
+            <li><img src="img/patrimoine-remarquable_news_image_top.jpg" alt="image02" /></li>
+            <li><img src="img/St_omer_cathedrale_ND.jpg" alt="image03" /></li>
+          </ul>
         </div>
       </div>
     </header>
