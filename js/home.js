@@ -1,4 +1,4 @@
-var map = L.map('map').setView([50.9652183, 1.8630816], 8);
+var map = L.map('map').setView([50.9652183, 1.8630816], 10);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -18,16 +18,25 @@ endIconUrl: '../img/red_location.png',
 shadowUrl: ''
   },
 polyline_options: {
-  color: '#000066',
-  opacity: 0.5,
+  color: '#FF3300',
+  opacity: 0.7,
   weight: 3,
   lineCap: 'round'
 },
 gpx_options: {
-  joinTrackSegments: false,
+  joinTrackSegments: true,
 }
 }).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
+}).addTo(map);
+
+/*
+L.tileLayer.provider('Stamen.Watercolor').addTo(map);
+*/
+
+L.tileLayer.provider('MapBox', {
+  id: 'grischka/ckyyjlyk7001n15qrjyusmkfj',
+  accessToken: 'pk.eyJ1IjoiZ3Jpc2Noa2EiLCJhIjoiY2t5eDB2Y3A2MDBkbzJ2cm5mZWdyb2xmYSJ9.FHiXptvUB-OxImgY5v_JQQ'
 }).addTo(map);
 
 const info = document.querySelector(".temoignage_conteneur");
