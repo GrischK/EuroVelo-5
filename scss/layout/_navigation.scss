@@ -22,6 +22,7 @@
   z-index: 1001;
   cursor: pointer;
   opacity: 0;
+  display: none;
 }
 
 .slideshow input + label {
@@ -30,7 +31,7 @@
   left: 1000px;
   width: 10px;
   height: 2px;
-  display: block;
+  display: none;
   z-index: 1000;
   border: 3px solid rgb(255, 0, 0);
   border: 3px solid rgba(255, 0, 0, 0.9);
@@ -165,21 +166,25 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   opacity: 1;
 }
 
-@media screen and (max-width: 840px)
-{
-	.slideshow { height: 345px; }
+@media screen and (max-width: 840px) {
+  .slideshow {
+    height: 345px;
+  }
 }
-@media screen and (max-width: 680px)
-{
-	.slideshow { height: 285px; }
+@media screen and (max-width: 680px) {
+  .slideshow {
+    height: 285px;
+  }
 }
-@media screen and (max-width: 560px)
-{
-	.slideshow { height: 235px; }
+@media screen and (max-width: 560px) {
+  .slideshow {
+    height: 235px;
+  }
 }
-@media screen and (max-width: 320px)
-{
-	.slideshow { height: 158px; }
+@media screen and (max-width: 320px) {
+  .slideshow {
+    height: 158px;
+  }
 }
 
 @keyframes slider {
@@ -198,55 +203,58 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   }
 }
 
-.nav{
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 20px;
-    font-size: 30px;
-    margin: 1px;
-    border: solid 1px #fff;
-    width: 1920px;
-    background: rgba(255, 255, 255, 0.199);
+.nav {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  font-size: 30px;
+  margin: 1px;
+  border: solid 1px #fff;
+  width: 1920px;
+  background: rgba(255, 255, 255, 0.199);
 }
-.mail{
-    font-size: 19px;
-    padding-top: 5px;
-    position: relative;
-    display: flex;
-    width: 100%;
-    gap: 5px;
-    
-    #submit{
-        
-        margin-right: -500px;
-    }
-}
-.subnav{
-    position: absolute;
-    z-index: 1;
-    margin-top: 50px;
-    width: 1920px;
-    border: solid 1px #fff;
-    background: #fff;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 40px;
-    position: fixed;
-    line-height: 100px;
-    height: 100px;
+.mail {
+  font-size: 19px;
+  padding-top: 5px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-weight: bold;
 
-    a{
-        border: solid 1px #fff;
-        color: black;
-        text-decoration: none;
-    };
-    li img{
-        margin-left: 25px;
-        height: 100px;
-        width: 125px;
-    }
+  #submit {
+    font-weight: bold;
+    background: green;
+    color: white;
+    margin-right: -500px;
+  }
+}
+.subnav {
+  position: absolute;
+  z-index: 1;
+  margin-top: 50px;
+  width: 1920px;
+  border: solid 1px #fff;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+  position: fixed;
+  line-height: 100px;
+  height: 100px;
+  font-weight: bold;
+
+  a {
+    border: solid 1px #fff;
+    color: black;
+    text-decoration: none;
+  }
+  li img {
+    margin-left: 25px;
+    height: 100px;
+    width: 125px;
+  }
 }
