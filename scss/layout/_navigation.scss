@@ -207,4 +207,19 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     gap: 20px;
     font-size: 30px;
     margin: 1px;
+    border: solid 1px #fff;
+    width: 1920px;
+    background: rgba(255, 255, 255, 0.199);
+}
+.mail{
+    font-size: 19px;
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    
+    #submit{
+        
+        margin-right: -500px;
+    }
 }
