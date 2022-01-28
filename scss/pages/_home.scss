@@ -23,6 +23,7 @@ main{
     #map{
         height: 800px;
         width: 50%;
+        margin-left: 20px;
     }
 
     #BlocPresentationCarte{
@@ -30,12 +31,14 @@ main{
     }
 
     #presentation{
+        margin-top: 0px;
         width: 50%;
         justify-content: space-around;
         height: 800px;
+        text-align: justify;
         @include flex_column;
         img{
-            width: 200px;
+        width: 200px;
         }
     }
 
@@ -56,6 +59,10 @@ main{
             border: none;
             align-items: center;
             justify-content: space-evenly;
+            p{
+                text-align: center;
+                color: $PoliceBlanche;
+            }
         }
         legend{
             color:$PoliceBlanche;
@@ -81,9 +88,14 @@ main{
                     align-items: center;
                     justify-content: center;    
                 }
+                .TrouverMonVelo:hover{
+                    opacity: 0.3;
+                    filter: blur(1px);
+                }
                 .TexteSurPhoto{
                     position: absolute;
-                    color:$PoliceBlanche;
+                    color:$CouleurTitresSombres;
+                    font-weight: bold;
                     z-index: 1;
                     left: 50%;
                     top: 35%;
@@ -98,7 +110,27 @@ main{
         position: relative;
         width: 100%;
         z-index: 0;
-    }
+        #experiences_photos{
+            display: flex;
+            width: 100%;
+            .temoignage_bloc{
+                height: auto;
+                position: relative;
+                .temoignage_bloc img{
+                    width: 100vw;
+                }
+                .info_temoignages{
+                    position: absolute;
+                    @include flex_column;
+                    width: 100%;
+                    top: 170px;
+                    h1{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }    
     
     #Experiences{
         position: absolute;
