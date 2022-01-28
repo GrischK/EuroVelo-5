@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="scss/main.css">
-
     <title>Accueil</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
 </head>
 <body>
     <main>
@@ -52,9 +51,7 @@
                     <button type="submit">Trouver mon parcours idéal</button>
                 </form>
             </section>
-            <section id="carte">
-                <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=fr&amp;q=+(Nom%20de%20votre%20%C3%A9tablissement)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="900" frameborder="0"></iframe></div>
-            </section>
+            <div id="map"></div>
         </article>
         <article id="TrouverVelo"  class="BlocsReduits">
             <h2>
@@ -65,38 +62,41 @@
             </p>
             <ul class="blocs_en_ligne">
                 <li>
-                    <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
+                    <img src="img/velo1.jpg" alt="cycliste" class="TrouverMonVelo">
                     <div class="TexteSurPhoto">Hébergements</div>
                 </li>
                 <li>
-                    <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
+                    <img src="img/velo2.jpg" alt="cycliste" class="TrouverMonVelo">
                     <div class="TexteSurPhoto">Lieux de visite</div>
                 </li>
                 <li>
-                    <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
+                    <img src="img/velo3.jpg" alt="cycliste" class="TrouverMonVelo">
                     <div class="TexteSurPhoto">Office de Tourisme</div>
                 </li>
                 <li>
-                    <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
+                    <img src="img/velo4.jpg" alt="cycliste" class="TrouverMonVelo">
                     <div class="TexteSurPhoto">Loueurs et réparateurs de vélo</div>
                 </li>
             </ul>
         </article>
-        <article id="Experiences">
-            <h2>
-                Ils l'ont fait
-            </h2>
-            <p>
-                Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée. Inspirez-vous !
-            </p>
-            <section id="experiences_photos">
-                <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
-                <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
-                <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
-            </section>
-            <button class="BoutonTransparent">
-                Tous les témoignages
-            </button>
+        <article class="bloc_conteneur">
+            <img src="img/landscape.jpg" alt="landscape" id="landscape">
+            <div id="Experiences">
+                <h2>
+                    Ils l'ont fait
+                </h2>
+                <p>
+                    Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée. Inspirez-vous !
+                </p>
+                <section id="experiences_photos">
+                    <img src="img/temoignage1.jpg" alt="cycliste" class="cycliste1">
+                    <img src="img/temoignage2.jpg" alt="cycliste" class="cycliste1">
+                    <img src="img/temoignage3.jpg" alt="cycliste" class="cycliste1">
+                </section>
+                <button class="BoutonTransparent">
+                    Tous les témoignages
+                </button>
+            </div>
         </article>
         <article class="BlocsContenuCentre BlocsReduits">
             <h2>
@@ -172,6 +172,8 @@
             </button>
         </article>
     </main>
-    <script src="js/API/home.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
