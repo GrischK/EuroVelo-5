@@ -35,7 +35,7 @@ L.tileLayer.provider('Stamen.Watercolor').addTo(map);
 */
 
 L.tileLayer.provider('MapBox', {
-  id: 'grischka/ckyx19q0n001914o2l2l7vuxk',
+  id: 'grischka/ckyyjlyk7001n15qrjyusmkfj',
   accessToken: 'pk.eyJ1IjoiZ3Jpc2Noa2EiLCJhIjoiY2t5eDB2Y3A2MDBkbzJ2cm5mZWdyb2xmYSJ9.FHiXptvUB-OxImgY5v_JQQ'
 }).addTo(map);
 
