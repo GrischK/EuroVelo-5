@@ -20,3 +20,25 @@ shadowUrl: 'images/pin-shadow.png'
 }).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
 }).addTo(map);
+
+const temoignages = document.querySelector(".cycliste1");
+const url = "http://195.14.105.18:1337";
+let vignettes = [];
+
+function init(){
+  getVignettes();
+}
+
+function getVignettes(){
+  fetch('${url}/api/temoignages-cartes2')
+    .then(data => data.json())
+    .then(result => {
+      vignettes = result;
+      console.log("vignettes", vignettes);
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
+
+console.log('hello');

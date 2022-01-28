@@ -23,6 +23,7 @@ main{
     #map{
         height: 800px;
         width: 50%;
+        margin-left: 20px;
     }
 
     #BlocPresentationCarte{
@@ -30,12 +31,14 @@ main{
     }
 
     #presentation{
+        margin-top: 0px;
         width: 50%;
         justify-content: space-around;
         height: 800px;
+        text-align: justify;
         @include flex_column;
         img{
-            width: 200px;
+        width: 200px;
         }
     }
 
