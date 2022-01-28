@@ -66,11 +66,11 @@ function renderData1(data) {
             <div class="card-infos">
               <h1>${a.data[x].attributes.Prenom}</h1>
               <ul>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star-half-alt"></i></li>
               </ul>
             </div>
             <div class="etape">
