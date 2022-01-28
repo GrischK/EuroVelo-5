@@ -1,0 +1,51 @@
+.slider {
+    width: $slider-width;
+    position: relative;
+  }
+  .slider-viewport {
+    width: $slider-width;
+    height: $slider-height;
+    overflow: hidden;
+  }
+  .slider-content {
+    display: grid;
+    grid-auto-flow: column;
+    transition: 1s all;
+  
+    img {
+      width: $slider-width;
+      height: $slider-height;
+      object-fit: cover; 
+      object-position: center;  
+      z-index: -1;
+    }
+    &.active {
+        left: 0;
+        transition: all 0.3s ease-out;
+      }
+  }
+  .slider-nav {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    z-index: 1;
+    text-align: center;
+    a {
+      box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      background-color: #adafbc;
+      width: 15px;
+      height: 15px;
+      margin: 0 3px;
+      &:hover {
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+  @for $i from 2 to 6 {
+    #img#{$i}:target .slider-content {
+      transform: translateX(-$slider-width * $i + $slider-width);
+    }
+  
+  }

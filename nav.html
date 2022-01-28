@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="scss/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
+    <link rel="stylesheet" href="scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <title>Accueil</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="head">
-        <nav>
-            <ul class="nav">
+      <nav>
+        <ul class="nav"></ul>
 
-            </ul>
+        <ul class="subnav"></ul>
+      </nav>
 
-            <ul class="subnav">
-
-            </ul>
-        </nav>
-
-        <div id="slider-wrapper">
-            <div class="inner-wrapper">
-              <input checked type="radio" name="slide" class="control" id="Slide1" />
-              <label for="Slide1" id="s1"></label>
-              <input type="radio" name="slide" class="control" id="Slide2" />
-              <label for="Slide2" id="s2"></label>
-              <input type="radio" name="slide" class="control" id="Slide3" />
-              <label for="Slide3" id="s3"></label>
-              <div class="overflow-wrapper">
-                <a class="slide" href=""><img src="img/patrimoine-remarquable_news_image_top.jpg" /></a>
-                <a class="slide" href=""><img src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg" /></a>
-                <a class="slide" href=""><img src="img/St_omer_cathedrale_ND.jpg" /></a>
+      <div class="slider">
+        <div class="slider-nav">
+          <a href="#img1"></a>
+          <a href="#img2"></a>
+          <a href="#img3"></a>
+        </div>
+        <div class="slider-viewport">
+          <div id="img1">
+            <div id="img2">
+              <div id="img3">
+                <div class="slider-content">
+                  <img
+                    src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg"
+                  />
+                  <img src="img/patrimoine-remarquable_news_image_top.jpg" />
+                  <img src="img/St_omer_cathedrale_ND.jpg" />
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
-</body>
-
+  </body>
 </html>
