@@ -49,6 +49,14 @@ main{
         align-items: center;
         justify-content: space-evenly;
         }
+        fieldset{
+            @include flex_column;
+            width: 100%;
+            height: 100%;
+            border: none;
+            align-items: center;
+            justify-content: space-evenly;
+        }
         legend{
             color:$PoliceBlanche;
             font-weight: bold;
@@ -89,7 +97,7 @@ main{
     .bloc_conteneur{
         position: relative;
         width: 100%;
-        z-index: -1;
+        z-index: 0;
     }
     
     #Experiences{
@@ -130,12 +138,19 @@ main{
     #PartezEnVoyage{
         @include flex_column;
         @include bloc_presentation_taille;
-        background-image: url(/img/landscape2.jpg);
         justify-content: space-between;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
         h2,p{
             color: $PoliceBlanche;
             margin-left: 10%;
             width: 80%;
+        }
+        #PartezEnVoyage_photos{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
         }
     }
 }

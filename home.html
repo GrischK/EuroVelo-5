@@ -20,35 +20,37 @@
                 </p>
                 <img src="img/pictos-velodyssee3.jpg" alt="icones">
                 <form>
-                    <legend>Pédalez selon vos envies</legend>
-                    <label for="difficultes"></label>
-                    <select id="difficultes">
-                        <option value="">Toutes les difficultés</option>    
-                        <option value="debutant">Je débute/En famille</option>    
-                        <option value="intermediare">J'ai l'habitude</option>
-                        <option value="confirme">Je me dépasse</option>
-                    </select>
-                    <label for="duree"></label>
-                    <select id="difficultes">
-                        <option value="">Toutes les durées</option>    
-                        <option value="journee">Journée</option>    
-                        <option value="long">Long séjour (+7 jours)</option>
-                        <option value="semaine">A la semaine</option>
-                        <option value="court">Court séjour (3 à 5 jours)</option>
-                        <option value="weekend">Week-end</option>
-                    </select>
-                    <label for="thematiques"></label>
-                    <select id="thematiques">
-                        <option value="">Toutes les thématiques</option>    
-                        <option value="littoral">Le littoral</option>    
-                        <option value="nature">Nature et patrimoine</option>
-                        <option value="aufil">Au fil de l'eau</option>
-                        <option value="forets">Forêts et landes</option>
-                        <option value="famille">En famille</option>
-                        <option value="vignobles">Vignobles et gastronomie</option>
-                        <option value="Panoramas">Panoramas</option>
-                    </select>
-                    <button type="submit">Trouver mon parcours idéal</button>
+                    <fieldset>
+                        <legend>Pédalez selon vos envies</legend>
+                        <label for="difficultes"></label>
+                        <select id="difficultes">
+                            <option value="">Toutes les difficultés</option>    
+                            <option value="debutant">Je débute/En famille</option>    
+                            <option value="intermediare">J'ai l'habitude</option>
+                            <option value="confirme">Je me dépasse</option>
+                        </select>
+                        <label for="duree"></label>
+                        <select id="duree">
+                            <option value="">Toutes les durées</option>    
+                            <option value="journee">Journée</option>    
+                            <option value="long">Long séjour (+7 jours)</option>
+                            <option value="semaine">A la semaine</option>
+                            <option value="court">Court séjour (3 à 5 jours)</option>
+                            <option value="weekend">Week-end</option>
+                        </select>
+                        <label for="thematiques"></label>
+                        <select id="thematiques">
+                            <option value="">Toutes les thématiques</option>    
+                            <option value="littoral">Le littoral</option>    
+                            <option value="nature">Nature et patrimoine</option>
+                            <option value="aufil">Au fil de l'eau</option>
+                            <option value="forets">Forêts et landes</option>
+                            <option value="famille">En famille</option>
+                            <option value="vignobles">Vignobles et gastronomie</option>
+                            <option value="Panoramas">Panoramas</option>
+                        </select>
+                        <button type="submit">Trouver mon parcours idéal</button>
+                    </fieldset>
                 </form>
             </section>
             <div id="map"></div>
@@ -148,29 +150,27 @@
                 </div>
             </section>
         </article>
-        <article id="PartezEnVoyage">
-            <h2>
-                Partez en voyage, ils organisent tout pour vous !
-            </h2>
-            <p>
-                Besoin d'aide pour organiser vos vacances ? Premier voyage à vélo ?
-                Des agences de voyages spécialisées vélo vous proposent des séjours clés en main. Partez serein et l'esprit libre.
-            </p>
-            <section class="blocs_en_ligne">
-                <div>
-                    <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
-                </div>
-                <div>
-                    <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
-                </div>
-                <div>
-                    <img src="img/cycliste.jpg" alt="cycliste" class="cycliste">
-                </div>
-            </section>
-            <button class="BoutonTransparent">
-                Tous les séjours
-            </button>
+        <article class="bloc_conteneur">
+            <img src="img/landscape2.jpg" alt="landscape" id="landscape">
+            <div id="PartezEnVoyage">
+                <h2>
+                    Partez en voyage, ils organisent tout pour vous !
+                </h2>
+                <p>
+                    Besoin d'aide pour organiser vos vacances ? Premier voyage à vélo ?
+                    Des agences de voyages spécialisées vélo vous proposent des séjours clés en main. Partez serein et l'esprit libre.
+                </p>
+                <section id="PartezEnVoyage_photos">
+                    <img src="img/temoignage1.jpg" alt="cycliste" class="cycliste1">
+                    <img src="img/temoignage2.jpg" alt="cycliste" class="cycliste1">
+                    <img src="img/temoignage3.jpg" alt="cycliste" class="cycliste1">
+                </section>
+                <button class="BoutonTransparent">
+                    Tous les séjours
+                </button>
+            </div>
         </article>
+
     </main>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
