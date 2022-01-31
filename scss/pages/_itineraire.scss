@@ -1,6 +1,7 @@
-body {
+.itineaire-grid {
     overflow: hidden;
 }
+
 .grille-etapes {
     height: 100vh;
     max-height: 100vh;
@@ -17,7 +18,7 @@ body {
             color: #00b9ca;
             text-decoration: none;
             font-weight: 600;
-            font-size: .875rem;
+            font-size: 15px;
         }
     }
     .pane-etapes {
@@ -45,6 +46,9 @@ body {
                 top: 10px;
                 background-color: whitesmoke;
                 color: black;
+                max-width: 60px;
+                width: 60px;
+                text-align: center;
                 font-weight: 500;
                 font-size: .875rem;
                 padding: 5px 20px 5px 10px;
