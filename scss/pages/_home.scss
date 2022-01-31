@@ -31,14 +31,14 @@ main{
     }
 
     #presentation{
+        @include flex_column;
         margin-top: 0px;
         width: 50%;
         justify-content: space-around;
         height: 800px;
         text-align: justify;
-        @include flex_column;
         img{
-        width: 200px;
+            width: 200px;
         }
     }
 
@@ -196,90 +196,94 @@ main{
     }
 }
 
-.avis {
+.avis{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     width: 100%;
     height: 100%;
   
-    .review_card {
-      background-color: $BgBlancSombre;
-      height: 100%;
-      width: 100%;
-      position: relative;
-      padding: 20px;
+    .review_card{
+        background-color: $BgBlancSombre;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 20px;
   
-      .card-heure h4 {
-        padding: 10px;
-        font-weight: lighter;
-        font-size: 0.9em;
-      }
-  
-      .card-infos {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-  
-        h1 {
-          font-size: 1.5em;
+        .card-heure h4{
+            padding: 10px;
+            font-weight: lighter;
+            font-size: 0.9em;
         }
-        ul {
-          list-style: none;
-          display: flex;
-          align-items: center;
   
-          li {
-            font-size: 1.1em;
-            color: $CouleurBoutonsVert;
-          }
-        }
-      }
-      .etape {
-        padding: 10px;
-        h3 {
-          font-size: 0.9em;
-          color: $PoliceBlanche;
-          background-color: $CouleurBoutonsVert;
-          padding: 5px;
-          width: max-content;
-        }
-      }
-      .note {
-        padding-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .card-infos{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
   
-        ul {
-          list-style: none;
-          display: flex;
-          align-items: center;
-  
-          li {
-            font-size: 1em;
-            text-align: center;
-            padding-right: 30px;
-            font-weight: bold;
-  
-            span {
-              font-size: 0.8em;
-              font-weight: lighter;
+            h1{
+            font-size: 1.5em;
             }
-          }
+
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+    
+                li{
+                    font-size: 1.1em;
+                    color: $CouleurBoutonsVert;
+                }
+            }
         }
-      }
+
+        .etape{
+            padding: 10px;
+            h3{
+                font-size: 0.9em;
+                color: $PoliceBlanche;
+                background-color: $CouleurBoutonsVert;
+                padding: 5px;
+                width: max-content;
+            }
+        }
+
+        .note{
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
   
-      p {
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+  
+                li{
+                    font-size: 1em;
+                    text-align: center;
+                    padding-right: 30px;
+                    font-weight: bold;
+  
+                    span{
+                    font-size: 0.8em;
+                    font-weight: lighter;
+                    }
+                } 
+            }
+        }
+    }
+
+    p{
         padding: 0px;
         margin-top: 5%;
         height: auto;
         margin-bottom: 5%;
         text-align: start;
-      }
+    }
   
-      .card-footer {
+    .card-footer {
         display: flex;
         justify-content: space-between;
         width: 85%;
@@ -295,29 +299,28 @@ main{
           font-size: 0.9em;
           color: $gris;
         }
-      }
     }
-  }
+}
 
-  #Grille_main{
-      div{
-          position: relative;
-          h1{
-              position: absolute;
-              top: 30%;
-              left: 50%;
-              transform: translate(-50%);
-              font-size: 25px;
-              color: $PoliceBlanche;
-          }
-      }
-  }
+#Grille_main{
+    div{
+        position: relative;
+        h1{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 25px;
+            color: $PoliceBlanche;
+        }
+    }
+}
 
-  #PartezEnVoyage_photos{
-      div{
-          width: 30%;
-          position: relative;
-          h1{
+#PartezEnVoyage_photos{
+    div{
+        width: 30%;
+        position: relative;
+        h1{
             position: absolute;
             width: 100%;
             top: 30%;
@@ -325,33 +328,16 @@ main{
             transform: translate(-50%);
             text-align: center;
             color: $PoliceBlanche;
-          }
-      }
-  }
+        }
+    }
+}
   
 #Experiences h2, #PartezEnVoyage h2{
     margin-top: 50px;
 }
 
-.cycliste1:hover{
-    filter: blur(5px);
-    cursor: pointer;
-}
-
-.cycliste2:hover{
-    filter: blur(5px);
-    cursor: pointer;
-}
-
-.cycliste:hover{
-    filter: blur(5px);
-    cursor: pointer;
-}
 
 .div_h1_DouceurDuNord:hover{
     display: none;
 }
 
-button:hover{
-    cursor: pointer; 
-}
