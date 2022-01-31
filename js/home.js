@@ -44,6 +44,8 @@ const url = "http://195.14.105.18:1337";
 let dataResult = [];
 const selector = document.querySelector(".avis");
 let result1 = [];
+let result2 = [];
+const selector2 = document.getElementById("Grille_main");
 
 init();
 
@@ -52,6 +54,8 @@ function init() {
   renderData();
   getNews1();
   renderData1();
+  getNews2();
+  renderData2();
 }
 
 function renderData(data) {
@@ -63,7 +67,7 @@ function renderData(data) {
       <img src="${url}${r.data[n].attributes.Photo.data.attributes.url}" alt="cycliste" class="cycliste1">
       <div class="info_temoignages">
           <h1>${r.data[n].attributes.Titre}</h1>
-          <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+          <p>${r.data[n].attributes.Description}</p>
       </div>
     </div>
     `;
@@ -82,6 +86,30 @@ function getNews() {
     });
 }
 
+function renderData2(data) {
+  w = Object(data);
+  for (let v in w.data) {
+
+    const content2 = `
+    <div>
+      <h1>${w.data[v].attributes.Titre}</h1>
+      <img src="${url}${w.data[v].attributes.Illustration.data.attributes.url}" alt="cycliste" class="cycliste">
+    </div>
+`;
+
+    selector2.innerHTML += content2;
+  }
+}
+
+function getNews2() {
+  fetch(`${url}/api/bloc-idees-homes?populate=*`)
+    .then((data) => data.json())
+    .then((result) => {
+      result2 = result;
+      console.log("result2", result2);
+      renderData2(result2);
+    });
+}
 
 function convertInFrenchDateString(dateString) {
   const dateFragments = dateString.split("-");
