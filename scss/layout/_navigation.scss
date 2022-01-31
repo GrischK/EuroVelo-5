@@ -166,26 +166,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   opacity: 1;
 }
 
-@media screen and (max-width: 840px) {
-  .slideshow {
-    height: 345px;
-  }
-}
-@media screen and (max-width: 680px) {
-  .slideshow {
-    height: 285px;
-  }
-}
-@media screen and (max-width: 560px) {
-  .slideshow {
-    height: 235px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .slideshow {
-    height: 158px;
-  }
-}
+
 
 @keyframes slider {
   0%,
@@ -256,5 +237,46 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     margin-left: 25px;
     height: 100px;
     width: 125px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .slideshow {
+    height: 345px;
+    width: 100%;
+  }
+ 
+  .subnav{
+    width: 840px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .slideshow {
+    height: 285px;
+    width: 100%;
+  }
+  .nav{
+    display: none;
+  }
+  .subnav a{
+    width: 680px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .slideshow {
+    height: 235px;
+    width: 100%;
+  }
+  .nav{
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slideshow {
+    height: 158px;
+    width: 100%;
+  }
+  .nav{
+    display: none;
   }
 }
