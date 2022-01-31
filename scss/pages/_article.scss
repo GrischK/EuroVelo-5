@@ -1,0 +1,136 @@
+.title_article {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: justify;
+
+  h1 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  h4 {
+    font-size: 1em;
+    padding-top: 10px;
+    font-weight: 500;
+    color: $CouleurParagraphes;
+    line-height: 25px;
+  }
+}
+.btn_icon {
+  text-align: center;
+  padding-top: 40px;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    background-color: $PoliceBlanche;
+    border: 2px solid $gris;
+    color: $gris;
+  }
+}
+.article_content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  position: relative;
+  margin-top: 60px;
+
+  img {
+    width: 800px;
+    z-index: -1;
+    box-shadow: 0 40px 60px 0 rgb(0 0 0 / 18%);
+  }
+
+  .content {
+    background-color: $PoliceBlanche;
+    border-radius: 5px;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    p {
+      z-index: 2;
+      text-align: justify;
+      font-size: 1.1em;
+      font-weight: 300;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h3 {
+      font-size: 2em;
+      z-index: 2;
+      padding: 20px;
+      text-align: justify;
+      margin: 0 auto;
+    }
+  }
+}
+.article_content2 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+  position: relative;
+  margin-top: 60px;
+
+  img {
+    width: 800px;
+    z-index: -1;
+    box-shadow: 0 40px 60px 0 rgb(0 0 0 / 18%);
+  }
+
+  .content2 {
+    background-color: $PoliceBlanche;
+    border-radius: 5px;
+    height: 60%;
+    position: absolute;
+    right: 50%;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    p {
+      z-index: 2;
+      text-align: justify;
+      font-size: 1.1em;
+      font-weight: 300;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h3 {
+      font-size: 2em;
+      z-index: 2;
+      padding: 20px;
+      text-align: justify;
+      margin: 0 auto;
+    }
+  }
+}
+.foot {
+  text-align: center;
+  max-width: 700px;
+  margin: 100px auto;
+
+  h1 {
+    font-size: 1.5em;
+    text-align: justify;
+  }
+  p {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 25px;
+    color: $gris;
+    margin-top: 10px;
+  }
+}
