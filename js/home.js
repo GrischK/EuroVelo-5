@@ -45,7 +45,9 @@ let dataResult = [];
 const selector = document.querySelector(".avis");
 let result1 = [];
 let result2 = [];
+let result3 = [];
 const selector2 = document.getElementById("Grille_main");
+const selector3 = document.getElementById("PartezEnVoyage_photos");
 
 init();
 
@@ -56,6 +58,8 @@ function init() {
   renderData1();
   getNews2();
   renderData2();
+  getNews3();
+  renderData3();
 }
 
 function renderData(data) {
@@ -110,6 +114,32 @@ function getNews2() {
       renderData2(result2);
     });
 }
+
+function renderData3(data) {
+  a = Object(data);
+  for (let b in a.data) {
+
+    const content3 = `
+    <div>
+      <h1>${a.data[b].attributes.Titre}</h1>
+      <img src="${url}${a.data[b].attributes.Photo.data.attributes.url}" alt="cycliste" class="cycliste1">
+    </div>
+`;
+
+    selector3.innerHTML += content3;
+  }
+}
+
+function getNews3() {
+  fetch(`${url}/api/partez-en-voyages?populate=*`)
+    .then((data) => data.json())
+    .then((result) => {
+      result3 = result;
+      console.log("result3", result3);
+      renderData3(result3);
+    });
+}
+
 
 function convertInFrenchDateString(dateString) {
   const dateFragments = dateString.split("-");
