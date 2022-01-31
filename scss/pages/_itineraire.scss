@@ -1,113 +1,107 @@
-<<<<<<< HEAD
 .itineaire-grid {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-=======
-/*body {
-    overflow: hidden;
-}*/
->>>>>>> 287259e9b166dcdcc4375817f6ccd30f766361af
 .grille-etapes {
-    height: 100vh;
-    max-height: 100vh;
-    width: 40vw;
-    overflow-y: scroll;
+  height: 100vh;
+  max-height: 100vh;
+  width: 40vw;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto, 1fr);
+  row-gap: 5px;
+  .download-gpx {
+    text-align: center;
+    margin: 20px 0;
+    a {
+      color: #00b9ca;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+  .pane-etapes {
+    width: 100%;
+    height: 190px;
+    background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(auto, 1fr);
-    row-gap: 5px;
-    .download-gpx {
+    grid-template-columns: 190px 1fr;
+    grid-template-rows: 190px;
+    overflow: hidden;
+    cursor: pointer;
+    .image {
+      width: 190px;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+      .kilometres {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        background-color: whitesmoke;
+        color: black;
+        max-width: 60px;
+        width: 60px;
         text-align: center;
-        margin: 20px 0;
-        a {
-            color: #00b9ca;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-        }
+        font-weight: 500;
+        font-size: 0.875rem;
+        padding: 5px 20px 5px 10px;
+      }
     }
-    .pane-etapes {
-        width: 100%;
-        height: 190px;
-        background-color: rgb(255, 255, 255);
-        display: grid;
-        grid-template-columns: 190px 1fr;
-        grid-template-rows: 190px;
-        overflow: hidden;
-        cursor: pointer;
-        .image {
-            width: 190px;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-            img {
-                width: auto;
-                height: 100%;
-                object-fit: cover;
-            }
-            .kilometres {
-                position: absolute;
-                left: 0;
-                top: 10px;
-                background-color: whitesmoke;
-                color: black;
-                max-width: 60px;
-                width: 60px;
-                text-align: center;
-                font-weight: 500;
-                font-size: .875rem;
-                padding: 5px 20px 5px 10px;
-            }
+    .section {
+      .banniere {
+        margin-top: 10px;
+        max-width: 100%;
+        color: white;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        .text {
+          padding: 5px 10px;
+          background-color: #eea622;
+          font-family: "Mukta Mahee", sans-serif;
+          font-weight: 600;
+          font-size: 0.875rem;
+          width: 100%;
         }
-        .section {
-            .banniere {
-                margin-top: 10px;
-                max-width: 100%;
-                color: white;
-                display: flex;
-                list-style: none;
-                justify-content: space-between;
-                align-items: center;
-                .text {
-                    padding: 5px 10px;
-                    background-color: #eea622;
-                    font-family: 'Mukta Mahee',sans-serif;
-                    font-weight: 600;
-                    font-size: .875rem;
-                    width: 100%;
-                }
-                .like a{
-                    text-decoration: none;
-                    color: #00b9ca;
-                    font-size:  20px;
-                    padding: 10px 10px;
-                }
-            }
-            .difficulty {
-                padding: 15px 20px;
-                font-size: .875rem;
-            }
-            h2 {
-                font-size: 1.25rem;
-                padding: 0 10px;
-            }
-            .description {
-                margin-top: 15px;
-                padding: 0 10px;
-                color: #585858;
-                line-height: 1.5em;
-                text-align: justify;
-                margin-bottom: 15px;
-                font-weight: 500;
-            }
+        .like a {
+          text-decoration: none;
+          color: #00b9ca;
+          font-size: 20px;
+          padding: 10px 10px;
         }
-        &:hover {
-            background-color: black;
-            color: white;
-            .description {
-                color: whitesmoke;
-            }
-        }
+      }
+      .difficulty {
+        padding: 15px 20px;
+        font-size: 0.875rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+        padding: 0 10px;
+      }
+      .description {
+        margin-top: 15px;
+        padding: 0 10px;
+        color: #585858;
+        line-height: 1.5em;
+        text-align: justify;
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
     }
+    &:hover {
+      background-color: black;
+      color: white;
+      .description {
+        color: whitesmoke;
+      }
+    }
+  }
 }
