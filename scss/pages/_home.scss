@@ -81,6 +81,7 @@ main{
     #TrouverVelo{
         ul{
             list-style: none;
+            margin-top: 50px;
             li{
                 position: relative;
                 img{
@@ -127,6 +128,10 @@ main{
                     h1{
                         text-align: center;
                     }
+                }
+                #bloc_info_temoignage p{
+                    font-size: 15px;
+                    text-align: center;
                 }
             }
         }
@@ -319,3 +324,10 @@ main{
       }
   }
   
+#Experiences h2, #PartezEnVoyage h2{
+    margin-top: 50px;
+}
+
+.cycliste1:hover{
+    filter: blur(5px);
+}
