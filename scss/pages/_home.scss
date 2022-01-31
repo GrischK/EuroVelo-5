@@ -81,6 +81,7 @@ main{
     #TrouverVelo{
         ul{
             list-style: none;
+            margin-top: 50px;
             li{
                 position: relative;
                 img{
@@ -128,6 +129,10 @@ main{
                         text-align: center;
                     }
                 }
+                #bloc_info_temoignage p{
+                    font-size: 15px;
+                    text-align: center;
+                }
             }
         }
     }    
@@ -151,8 +156,6 @@ main{
             color: $PoliceBlanche;
             margin-left: 10%;
             width: 80%;
-            font-size: 15px;
-            text-align: center;
         }
     }
 
@@ -290,4 +293,41 @@ main{
       }
     }
   }
+
+  #Grille_main{
+      div{
+          position: relative;
+          h1{
+              position: absolute;
+              top: 30%;
+              left: 50%;
+              transform: translate(-50%);
+              font-size: 25px;
+              color: $PoliceBlanche;
+          }
+      }
+  }
+
+  #PartezEnVoyage_photos{
+      div{
+          width: 30%;
+          position: relative;
+          h1{
+            position: absolute;
+            width: 100%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            color: $PoliceBlanche;
+          }
+      }
+  }
   
+#Experiences h2, #PartezEnVoyage h2{
+    margin-top: 50px;
+}
+
+.cycliste1:hover{
+    filter: blur(5px);
+}
