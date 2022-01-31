@@ -162,7 +162,7 @@ function renderData1(data) {
   for (let x in a.data) {
     if(x<3){
       const content1 = `
-          <div class="card">
+          <div class="review_card">
           <div class="card-heure">
             <h4>${a.data[x].attributes.Date}</h4>
           </div>

@@ -203,7 +203,7 @@ main{
     width: 100%;
     height: 100%;
   
-    .card {
+    .review_card {
       background-color: $BgBlancSombre;
       height: 100%;
       width: 100%;
@@ -272,10 +272,11 @@ main{
       }
   
       p {
-        padding: 40px;
+        padding: 0px;
         margin-top: 5%;
         height: auto;
         margin-bottom: 5%;
+        text-align: start;
       }
   
       .card-footer {
@@ -334,8 +335,14 @@ main{
 
 .cycliste1:hover{
     filter: blur(5px);
+    cursor: pointer;
 }
 
 .cycliste:hover{
     filter: blur(5px);
+    cursor: pointer;
+}
+
+.div_h1_DouceurDuNord:hover{
+    display: none;
 }
