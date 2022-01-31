@@ -96,8 +96,10 @@ function renderData2(data) {
 
     const content2 = `
     <div>
-      <h1>${w.data[v].attributes.Titre}</h1>
       <img src="${url}${w.data[v].attributes.Illustration.data.attributes.url}" alt="cycliste" class="cycliste">
+      <div class="div_h1_DouceurDuNord">
+        <h1>${w.data[v].attributes.Titre}</h1>
+      </div>
     </div>
 `;
 

@@ -170,6 +170,10 @@ main{
         display: grid;
         gap: 30px;
         grid-template-columns: repeat(3, 1fr);
+        .div_h1_DouceurDuNord{
+            position: relative;
+            top: -150px;
+        }
     }
 
     #PartezEnVoyage{
@@ -329,5 +333,9 @@ main{
 }
 
 .cycliste1:hover{
+    filter: blur(5px);
+}
+
+.cycliste:hover{
     filter: blur(5px);
 }
