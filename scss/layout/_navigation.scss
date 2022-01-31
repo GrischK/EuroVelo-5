@@ -166,8 +166,6 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   opacity: 1;
 }
 
-
-
 @keyframes slider {
   0%,
   20%,
@@ -245,8 +243,8 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     height: 345px;
     width: 100%;
   }
- 
-  .subnav{
+
+  .subnav {
     width: 840px;
   }
 }
@@ -255,10 +253,10 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     height: 285px;
     width: 100%;
   }
-  .nav{
+  .nav {
     display: none;
   }
-  .subnav a{
+  .subnav a {
     width: 680px;
   }
 }
@@ -267,7 +265,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     height: 235px;
     width: 100%;
   }
-  .nav{
+  .nav {
     display: none;
   }
 }
@@ -276,7 +274,36 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     height: 158px;
     width: 100%;
   }
-  .nav{
+  .nav {
     display: none;
+  }
+
+  .contenu {
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+  }
+
+  .subnav {
+    position: absolute;
+    z-index: 1;
+    margin-top: 50px;
+    width: 320px;
+    border: solid 1px #fff;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5px;
+    position: fixed;
+    line-height: 100px;
+    height: 100px;
+    font-weight: bold;
+    li img {
+      
+      height: 50px;
+      width: 50px;
+    }
   }
 }
