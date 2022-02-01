@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 article {
   width: 100%;
   height: auto;
@@ -22,7 +26,33 @@ header h3 {
   font-size: 1em;
 }
 
+.banniere {
+  background-image: url(../../img/St_omer_cathedrale_ND.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 95vh;
+  position: relative;
 
+  .ban-content {
+    position: absolute;
+    width: 100%;
+    margin: 15% auto;
+    height: auto;
+  }
+  h1 {
+    color: $PoliceBlanche;
+    margin-bottom: 5%;
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+
+  a {
+    margin-left: 50%;
+    color: $PoliceBlanche;
+    font-size: 40px;
+  }
+}
 
 .grid {
   display: grid;
@@ -30,7 +60,6 @@ header h3 {
   gap: 30px;
   width: 100%;
 }
-
 
 .box {
   width: 100%;
