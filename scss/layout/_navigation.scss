@@ -128,7 +128,7 @@ input.selecteur-3:checked ~ .contenu {
   list-style: none;
   margin: 0;
   padding: 0;
-  animation: slider 32s infinite;
+  animation: slider 15s infinite;
 }
 
 .slider > li {
@@ -244,10 +244,29 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
 }
 
 @media screen and (max-width: 640px) {
+  .head{
+    width: 640px;
+  }
   .nav{
     display: none;
   }
   .subnav{
-    display: none;
+    #enfant1{
+      display: flex;
+      justify-content: center;
+      margin-left: 250px;
+    }
+    #enfant2{
+      display: none;
+    }
+    #enfant3{
+      display: none;
+    }
+    #enfant4{
+      display: none;
+    }
+    #enfant5{
+      display: none;
+    }
   }
 }
