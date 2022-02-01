@@ -226,3 +226,79 @@ header h3 {
     }
   }
 }
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section {
+    width: 90vw;
+  }
+  .avis {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section {
+    width: 90vw;
+  }
+
+  .avis {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .button {
+    width: 75vw;
+    margin: -3% auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    a {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section {
+    width: 90vw;
+  }
+  .avis {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-23%);
+  }
+  .button {
+    width: 75vw;
+    margin: -3% auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    a {
+      margin-bottom: 20px;
+    }
+  }
+
+  .banniere .ban-content h1 {
+    font-size: 2em;
+    margin-top: 60%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .avis {
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+    margin: 0 auto;
+  }
+}
