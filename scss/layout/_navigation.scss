@@ -237,36 +237,63 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   }
 }
 
-.hamburger{
-  position: absolute;
-  z-index: 1;
+#hamburger {
+  font-size: 50px;
+  cursor: pointer;
   display: none;
 }
 
 @media screen and (max-width: 640px) {
-  .head{
+  .head {
     width: 640px;
+    position: fixed;
   }
-  .nav{
+  .nav {
     display: none;
+    z-index: -1;
   }
-  .subnav{
-    #enfant1{
+  .subnav {
+    position: absolute;
+    top: -50px;
+    z-index: 1;
+    #enfant1 {
       display: flex;
       justify-content: center;
       margin-left: 250px;
     }
-    #enfant2{
+    #enfant2 {
       display: none;
     }
-    #enfant3{
+    #enfant3 {
       display: none;
     }
-    #enfant4{
+    #enfant4 {
       display: none;
     }
-    #enfant5{
+    #enfant5 {
       display: none;
     }
+  }
+  #hamburger {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .menu_active {
+    display: flex;
+    z-index: 10000;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border: 1px black solid;
+    top: 54px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
   }
 }

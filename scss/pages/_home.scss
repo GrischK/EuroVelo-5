@@ -362,3 +362,63 @@ main{
     display: none;
 }
 
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    main{
+        #BlocPresentationCarte{
+            flex-direction: column;
+            width: 100%;
+            margin: 10px auto;
+            width: 80%;
+            #presentation{
+                width: 100%;
+                align-items: center;
+            }
+            #map{
+                margin: 10px auto;
+                width: 100%;
+            }
+        }
+
+        #TrouverVelo{
+            width: 100%;
+            .blocs_en_ligne{
+                flex-direction: column;
+                align-items: center;
+                li{
+                    width: 80%;
+                    margin-bottom: 30px;
+                    .TrouverMonVelo{
+                        width: 100%;
+                        height: 100px;
+                        object-fit: cover;
+                    }
+                }
+                li:hover .TexteSurPhoto{
+                    color: black;
+                }
+            }
+        }
+
+        #experiences_photos{
+            .cycliste2{
+                height: 190px;
+                width: 90%;
+            }
+            #bloc_info_temoignage{
+                width: 80%;
+                top: 65px;
+                h2{
+                    font-size: 15px;
+                }
+            }
+        }
+        
+        .BlocsContenuCentre, .BlocsReduits {
+            width: 100%;
+        }
+
+        #Grille_main{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
