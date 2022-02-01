@@ -123,8 +123,8 @@ function renderData3(data) {
 
     const content3 = `
     <div>
-      <h1>${a.data[b].attributes.Titre}</h1>
       <img src="${url}${a.data[b].attributes.Photo.data.attributes.url}" alt="cycliste" class="cycliste1">
+      <h1>${a.data[b].attributes.Titre}</h1>
     </div>
 `;
 
