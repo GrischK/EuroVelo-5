@@ -8,7 +8,7 @@ article{
 header h1{
     margin-top: 3%;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 header h3{
@@ -19,14 +19,14 @@ header h3{
 }
 
 section{
-    width: 75vw;
+    width: 90vw;
     height: auto;
     margin: 5% auto;
 }
 
 .grille{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:30px;
 }
 
@@ -54,13 +54,44 @@ section{
     justify-content: space-between;
     align-items: center;
     h3{
-        font-size: 12px;
+        font-size: 13px;
+        font-weight: 600;
         padding: 10px;
         
     }
     h1{
         color: $CouleurBoutonsVert;
         padding: 10px;
-        font-size: 23px;
+        font-size: 27px;
     }
 }
+
+@media (min-width: 700px) and (max-width: 1000px) { 
+    .grille{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section{
+        width: 90vw;
+
+    }
+ }
+
+@media (min-width: 500px) and (max-width: 700px) { 
+    .grille{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section{
+        width: 90vw;
+
+    }
+ }
+
+ @media (min-width: 250px) and (max-width: 500px) { 
+
+    .grille{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section{
+        width: 90vw;
+    }
+ }
