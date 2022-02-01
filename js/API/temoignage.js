@@ -17,11 +17,11 @@ function renderData(data) {
   r = Object(data);
   for (let n in r.data) {
     const content = `
-
+          <a href="article.html">
             <div class="box">
-            <img src="${url}${r.data[n].attributes.image.data.attributes.url}" alt="image" />
+          <img src="${url}${r.data[n].attributes.image.data.attributes.url}" alt="image" />
             <h1>${r.data[n].attributes.titre}</h1>
-          </div>
+          </div></a>
     `;
 
     info.innerHTML += content;
@@ -57,12 +57,14 @@ function getNews1() {
 function renderData1(data) {
   a = Object(data);
   for (let x in a.data) {
-    var time = a.data[x].attributes.heure.split(":00.000").join(' ')
+    var time = a.data[x].attributes.heure.split(":00.000").join(" ");
     const content1 = `
 
             <div class="card">
             <div class="card-heure">
-              <h4>${convertInFrenchDateString(a.data[x].attributes.Date)} ${time}</h4>
+              <h4>${convertInFrenchDateString(
+                a.data[x].attributes.Date
+              )} ${time}</h4>
             </div>
             <div class="card-infos">
               <h1>${a.data[x].attributes.Prenom}</h1>
