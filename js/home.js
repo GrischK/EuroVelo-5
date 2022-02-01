@@ -1,7 +1,7 @@
 var map = L.map('map').setView([50.9652183, 1.8630816], 10);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    attribution: '',
     maxZoom: 18,
     id: 'mapbox/light-v10',
     style: 'mapbox://styles/grischka/ckyx19q0n001914o2l2l7vuxk',
@@ -123,8 +123,8 @@ function renderData3(data) {
 
     const content3 = `
     <div>
-      <h1>${a.data[b].attributes.Titre}</h1>
       <img src="${url}${a.data[b].attributes.Photo.data.attributes.url}" alt="cycliste" class="cycliste1">
+      <h1>${a.data[b].attributes.Titre}</h1>
     </div>
 `;
 
