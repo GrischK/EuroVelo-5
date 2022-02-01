@@ -363,6 +363,7 @@ main{
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
+    main{
         #BlocPresentationCarte{
             flex-direction: column;
             width: 100%;
@@ -392,9 +393,10 @@ main{
                         object-fit: cover;
                     }
                 }
-                li:hover{
+                li:hover .TexteSurPhoto{
                     color: black;
                 }
+            }
         }
 
         #experiences_photos{
@@ -410,7 +412,7 @@ main{
                 }
             }
         }
-
+        
         .BlocsContenuCentre, .BlocsReduits {
             width: 100%;
         }
