@@ -165,11 +165,20 @@
   }
 }
 @media screen and (min-width: 300px) and (max-width: 600px) {
+
+  .banniere2 .ban-content2 h1{
+    font-size: 2em;
+    margin-top: 50%;
+  }
+
   .article_content {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     margin-top: 60px;
+    margin-bottom: 120%;
+    display: block;
 
     img {
       width: 300px;
@@ -197,7 +206,11 @@
   .article_content2 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    position: relative;
+    margin-bottom: 120%;
+
+  
 
     img {
       width: 300px;
@@ -206,6 +219,9 @@
     .content2 {
       width: 90%;
       height: auto;
+      position: absolute;
+      right: 8%;
+      top: 80%;
       p {
         text-align: justify;
         font-size: 0.8em;
@@ -224,7 +240,7 @@
   .foot {
     text-align: center;
     max-width: 700px;
-    margin: 50% auto;
+    margin: 0 auto;
 
     h1 {
       font-size: 1.5em;
