@@ -372,10 +372,15 @@ main{
             #presentation{
                 width: 100%;
                 align-items: center;
+                form{
+                    width: 100%;
+                }
             }
             #map{
                 margin: 10px auto;
                 width: 100%;
+                border-radius: 5px;
+                box-shadow: 2px 2px 10px grey;
             }
         }
 
@@ -400,15 +405,26 @@ main{
         }
 
         #experiences_photos{
-            .cycliste2{
-                height: 190px;
-                width: 90%;
-            }
-            #bloc_info_temoignage{
-                width: 80%;
-                top: 65px;
-                h2{
-                    font-size: 15px;
+            width: 30%;
+                .cycliste2{
+                    height: 190px;
+                    width: 100%;
+                }
+            .temoignage_bloc{
+                width: 30%;
+                #bloc_info_temoignage{
+                    width: 80%;
+                    top: 25px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    h2{
+                        font-size: 15px;
+                    }
+                    p{
+                        width: 100%;
+                        margin-top: 15px;
+                        margin-left: 0px;
+                    }
                 }
             }
         }
@@ -419,6 +435,22 @@ main{
 
         #Grille_main{
             grid-template-columns: repeat(2, 1fr);
+            .div_h1_DouceurDuNord h1{
+                font-size: 20px;
+            }
+        }
+
+        .cycliste1{
+            height: 190px;
+            box-shadow: rgba(131, 125, 125, 0.25) 0px 0.0625em 0.0625em, rgba(128, 108, 108, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+
+        #PartezEnVoyage_photos{
+            div{
+                h1{
+                    font-size: 15px;
+                }
+            }
         }
     }
 }
