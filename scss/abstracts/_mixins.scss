@@ -12,3 +12,10 @@
     width: 100%;
     height: 100%;
 }
+
+@mixin h2_bloc{
+    font-family: 'Poppins';
+    color: $PoliceBlanche;
+    font-size: 28px;
+    text-align: center;
+}

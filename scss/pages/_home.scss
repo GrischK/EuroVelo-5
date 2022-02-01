@@ -1,9 +1,16 @@
 main{
     width: 100%;
     margin: 0 auto;
+
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 2em;
+        color: $CouleurTitresSombres;
+    }
+
     h2{
         font-family: sans-serif;
-        font-weight: 300;
+        font-weight: 2em;
         font-size: 1.75rem;
         color: $CouleurTitresSombres;
     }
@@ -152,7 +159,13 @@ main{
             display: flex;
             justify-content: space-around;   
         }
-        h2,p{
+        h1{
+            color: $PoliceBlanche;
+            margin-left: 10%;
+            width: 80%;
+            font-size: 28px;
+        }
+        p{
             color: $PoliceBlanche;
             margin-left: 10%;
             width: 80%;
@@ -183,7 +196,7 @@ main{
         position: absolute;
         z-index: 1;
         top: 0px;
-        h2,p{
+        h1,p{
             color: $PoliceBlanche;
             margin-left: 10%;
             width: 80%;
@@ -332,8 +345,12 @@ main{
     }
 }
   
-#Experiences h2, #PartezEnVoyage h2{
+#Experiences h1, #PartezEnVoyage h1{
     margin-top: 50px;
+}
+
+#Experiences h2{
+    @include h2_bloc;
 }
 
 

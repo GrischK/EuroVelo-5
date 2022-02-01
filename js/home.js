@@ -70,7 +70,7 @@ function renderData(data) {
     <div class="temoignage_bloc">
       <img src="${url}${r.data[n].attributes.Photo.data.attributes.url}" alt="cycliste" class="cycliste2">
       <div class="info_temoignages" id="bloc_info_temoignage">
-          <h1>${r.data[n].attributes.Titre}</h1>
+          <h2>${r.data[n].attributes.Titre}</h2>
           <p>${r.data[n].attributes.Description}</p>
       </div>
     </div>
