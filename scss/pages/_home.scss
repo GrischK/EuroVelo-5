@@ -335,12 +335,13 @@ main{
         position: relative;
         h1{
             position: absolute;
-            width: 100%;
+            width: 80%;
             top: 30%;
-            left: 50%;
+            left: 40%;
             transform: translate(-50%);
             text-align: center;
             color: $PoliceBlanche;
+            font-size: 28px;
         }
     }
 }
