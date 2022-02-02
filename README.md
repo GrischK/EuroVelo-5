@@ -91,16 +91,18 @@ Présentation orale :
 
 ## Répartition des tâches
 
+
 | Bastien | Grischka | Jordan | Josué | Thomas |
 |:----------|:----------|:----------|:----------|:----------|
 | Répartition des tâches |  Répartition des tâches |  Répartition des tâches |  Répartition des tâches |  Répartition des tâches | 
-| Codage page Infos pratiques | Création du projet sur GitHub et gestion des collaborateurs | Création de la barre de menu | Codage page Itinéraires  | Structuration Sass | 
-| Codage page News | Rédaction README |  Codage du CSS  | Codage du CSS   | Ajout des fichiers SASS (7-1) | 
-| Création API | Création de tableau Trello pour la gestion de projet | Codage du responsive  | Codage du responsive  |  Codage page Itinéraires | 
-| Codage du CSS  | Créations de maquettes |  Passage au validateur W3C | Passage au validateur W3C  | Codage du CSS   | 
-| Codage du responsive | Codage page Accueil |  Création du contenu API |  Création du contenu API |  Codage du responsive | 
-| Passage au validateur W3C | Codage du responsive | Tests de fonctionnalité  | Tests de fonctionnalité  | Passage au validateur W3C | 
-| Tests de fonctionnalité | Passage au validateur W3C |   |   | Création du contenu API | 
-|  | Création carte itinéraires |   |   | Tests de fonctionnalité | 
-|  | Création du contenu API |   |   |  | 
+| Codage page Infos pratiques | Création du projet sur GitHub et gestion des collaborateurs | Création de la barre de menu / Header / Carrousel| Codage page Itinéraires  | Structuration Sass | 
+| Codage page News | Rédaction README |  Codage page Inspiration  | Codage du CSS   | Ajout des fichiers SASS (7-1) | 
+| Création API | Création de tableau Trello pour la gestion de projet | Codage du CSS  | Codage du responsive  |  Codage page Itinéraires | 
+| Codage du CSS  | Créations de maquettes | Codage du responsive  | Passage au validateur W3C  | Codage Footer  | 
+| Codage du responsive | Codage page Accueil | Passage au validateur W3C  |  Création du contenu API |  Codage du CSS  | 
+| Passage au validateur W3C | Codage du responsive |  Création du contenu API | Tests de fonctionnalité  | Codage du responsive | 
+| Tests de fonctionnalité | Passage au validateur W3C | Tests de fonctionnalité  |   | Passage au validateur W3C | 
+|  | Création carte itinéraires |   |   | Création du contenu API | 
+|  | Création du contenu API |   |   | Tests de fonctionnalité | 
+|  | Présentation PowerPoint |   |   | | 
 ```
