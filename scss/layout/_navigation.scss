@@ -244,7 +244,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
 
 @media screen and (max-width: 640px) {
   .head {
-    width: 640px;
+    width: 100%;
     position: fixed;
   }
   .nav {
@@ -294,5 +294,9 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     right: 0px;
     width: 200px;
     height: 200px;
+  }
+  .contenu{
+    width: 100%;
+    z-index: -1;
   }
 }
