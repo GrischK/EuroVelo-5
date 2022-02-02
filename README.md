@@ -48,6 +48,8 @@ Présentation orale :
 
 ## Ressources
 
+## Ressources
+
 -   [W3C Validator](https://validator.w3.org/) : Validateur HTML
 -   [Validateur CSS](https://jigsaw.w3.org/css-validator/) : Validateur CSS3
 -   [Normalize.css](https://github.com/necolas/normalize.css)
@@ -56,7 +58,13 @@ Présentation orale :
 - [Icon8](https://icons8.com/illustrations/web-elements) : Icones
 -  [Pexels](https://www.pexels.com/fr-fr/) : Images
 -  [Freepik](https://fr.freepik.com/) : Images
-- {https://fr.wikipedia.org/wiki/EuroVelo_5
+- [Wikipedia](https://fr.wikipedia.org/wiki/EuroVelo_5) : Infos
+- [StorySet](https://storyset.com/) : Images PowerPoint
+- [Stackedit](https://stackedit.io) : Rendu visuel Markdown
+- [MapBox](https://www.mapbox.com/) : Création de carte personnalisée
+- [LeafletJS](https://leafletjs.com/examples/quick-start/) : Tuto intégration carte personnalisée
+-  [Trello](https://trello.com/) : Gestion de projet
+-  [GPX Plugin](https://github.com/mpetazzoni/leaflet-gpx) : Plugin pour intégration auto des itinéraires sur la carte
 
 ## L'équipe
 
@@ -95,14 +103,15 @@ Présentation orale :
 | Bastien | Grischka | Jordan | Josué | Thomas |
 |:----------|:----------|:----------|:----------|:----------|
 | Répartition des tâches |  Répartition des tâches |  Répartition des tâches |  Répartition des tâches |  Répartition des tâches | 
-| Codage page Infos pratiques | Création du projet sur GitHub et gestion des collaborateurs | Création de la barre de menu / Header / Carrousel| Codage page Itinéraires  | Structuration Sass | 
-| Codage page News | Rédaction README |  Codage page Inspiration  | Codage du CSS   | Ajout des fichiers SASS (7-1) | 
-| Création API | Création de tableau Trello pour la gestion de projet | Codage du CSS  | Codage du responsive  |  Codage page Itinéraires | 
-| Codage du CSS  | Créations de maquettes | Codage du responsive  | Passage au validateur W3C  | Codage Footer  | 
-| Codage du responsive | Codage page Accueil | Passage au validateur W3C  |  Création du contenu API |  Codage du CSS  | 
-| Passage au validateur W3C | Codage du responsive |  Création du contenu API | Tests de fonctionnalité  | Codage du responsive | 
-| Tests de fonctionnalité | Passage au validateur W3C | Tests de fonctionnalité  |   | Passage au validateur W3C | 
-|  | Création carte itinéraires |   |   | Création du contenu API | 
-|  | Création du contenu API |   |   | Tests de fonctionnalité | 
+| Codage page Infos pratiques | Création du projet sur GitHub et gestion des collaborateurs | Création de la barre de menu | Codage page Itinéraires  | Structuration Sass | 
+| Codage page News | Rédaction README |  Codage Header-carrousel  | Codage du CSS   | Ajout des fichiers SASS (7-1) | 
+| Création API | Création de tableau Trello pour la gestion de projet | Codage page Inspiration  | Codage du responsive  |  Codage page Itinéraires | 
+| Codage du CSS  | Créations de maquettes | Codage du CSS  | Passage au validateur W3C  |  Codage du CSS | 
+| Codage du responsive | Codage page Accueil | Codage du responsive  |  Création du contenu API |  Codage du responsive  | 
+| Passage au validateur W3C | Codage Footer |  Passage au validateur W3C | Tests de fonctionnalité  | Passage au validateur W3C | 
+| Tests de fonctionnalité | Codage du responsive | Création du contenu API  |   | Création du contenu API | 
+|  | Passage au validateur W3C |  Tests de fonctionnalité |   | Tests de fonctionnalité | 
+|  | Création carte itinéraires |   |   |  | 
+|  | Création du contenu API |   |   | | 
 |  | Présentation PowerPoint |   |   | | 
 ```
