@@ -210,6 +210,8 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     color: white;
     font-size: 15px;
     margin-right: -500px;
+    border-radius: 5px;
+    border: 1px solid #007c74;
   }
 }
 .subnav {
