@@ -191,9 +191,10 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   gap: 20px;
   font-size: 30px;
   margin: 1px;
-  border: solid 1px #fff;
+  
+  height: 35px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.199);
+  
 }
 .mail {
   font-size: 19px;
@@ -205,8 +206,9 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
 
   #submit {
     font-weight: bold;
-    background: green;
+    background: #007c74;
     color: white;
+    font-size: 15px;
     margin-right: -500px;
   }
 }
@@ -236,13 +238,16 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   }
 }
 
+.head{
+  width: 150px;
+}
 #hamburger {
   font-size: 50px;
   cursor: pointer;
   display: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
   .head {
     width: 100%;
     position: fixed;
@@ -275,12 +280,99 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     background-color: white;
     border: 1px black solid;
     top: 54px;
-    right: 0px;
     height: fit-content;
   }
   .contenu {
     display: block;
     max-width: 100%;
     height: 75vh;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .head {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+  }
+  .nav {
+    display: none;
+    z-index: -1;
+  }
+  .subnav {
+    display: none;
+    position: absolute;
+    top: -50px;
+    z-index: 1;
+  }
+  #hamburger {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .menu_active {
+    display: flex;
+    z-index: 10000;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border: 1px black solid;
+    top: 22px;
+    width: 300px;
+    gap: 0px;
+    height: fit-content;
+  }
+  .contenu {
+    display: block;
+    max-width: 100%;
+    height: 79vh;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .head {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+  }
+  .nav {
+    display: flex;
+    z-index: 1;
+  }
+  .subnav {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+  }
+  #hamburger {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .menu_active {
+    display: flex;
+    z-index: 10000;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border: 1px black solid;
+    top: 22px;
+    width: 300px;
+    gap: 0px;
+    height: fit-content;
+  }
+  .contenu {
+    display: block;
+    max-width: 100%;
+    height: 89vh;
   }
 }
