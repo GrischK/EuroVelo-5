@@ -191,10 +191,10 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   gap: 20px;
   font-size: 30px;
   margin: 1px;
-  border: solid 1px #fff;
+  
   height: 35px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.199);
+  
 }
 .mail {
   font-size: 19px;
@@ -206,8 +206,9 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
 
   #submit {
     font-weight: bold;
-    background: green;
+    background: #007c74;
     color: white;
+    font-size: 15px;
     margin-right: -500px;
   }
 }
