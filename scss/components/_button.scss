@@ -30,3 +30,17 @@ form{
 button:hover{
     cursor: pointer; 
 }
+
+#more{
+    @include button;
+    color: $CouleurBoutonsVert;
+    border: 1px solid $CouleurBoutonsVert;
+    background-color: white;
+}
+
+#contact_us{
+    @include button;
+    color: $PoliceBlanche;
+    border: 1px solid $CouleurBoutonsVert;
+    background-color: $CouleurBoutonsVert;
+}
