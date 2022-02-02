@@ -1,7 +1,7 @@
 let bouton = document.getElementById("hamburger");
 
 bouton.onclick = function() {
-  let menu = document.getElementById("menu");
+  let menu = document.getElementById("subnav");
 
    console.log(bouton.classList);
   
