@@ -252,30 +252,14 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     z-index: -1;
   }
   .subnav {
+    display: none;
     position: absolute;
     top: -50px;
     z-index: 1;
-    #enfant1 {
-      display: flex;
-      justify-content: center;
-      margin-left: 250px;
-    }
-    #enfant2 {
-      display: none;
-    }
-    #enfant3 {
-      display: none;
-    }
-    #enfant4 {
-      display: none;
-    }
-    #enfant5 {
-      display: none;
-    }
   }
   #hamburger {
     display: block;
-    position: absolute;
+    //position: absolute;
     z-index: 1;
     left: 30px;
     margin-top: 30px;
@@ -297,6 +281,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   }
   .contenu{
     width: 100%;
+    object-fit: cover;
     z-index: -1;
   }
 }

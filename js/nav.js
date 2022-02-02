@@ -1,9 +1,7 @@
 let bouton = document.getElementById("hamburger");
 
 bouton.onclick = function() {
-  let menu = document.getElementById("subnav");
-
-   console.log(bouton.classList);
+  let menu = document.getElementById("menu");
   
   if (bouton.classList.contains("inactive")){ // Si le contenu est le hamburger :
     bouton.innerHTML = "&#x2715;";
