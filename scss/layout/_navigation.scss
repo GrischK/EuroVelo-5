@@ -7,7 +7,6 @@
 }
 
 .contenu {
-  
   width: 100vw;
   height: 95vh;
   overflow: hidden;
@@ -203,6 +202,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   display: flex;
   width: 100%;
   font-weight: bold;
+  gap: 30px;
 
   #submit {
     font-weight: bold;
