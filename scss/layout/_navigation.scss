@@ -290,6 +290,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .head {
     width: 100%;
+    height: 150px;
     position: fixed;
   }
   .nav {
@@ -328,5 +329,49 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
     display: block;
     max-width: 100%;
     height: 79vh;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .head {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+  }
+  .nav {
+    display: flex;
+    z-index: 1;
+  }
+  .subnav {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+  }
+  #hamburger {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .menu_active {
+    display: flex;
+    z-index: 10000;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border: 1px black solid;
+    top: 22px;
+    width: 300px;
+    gap: 0px;
+    height: fit-content;
+  }
+  .contenu {
+    display: block;
+    max-width: 100%;
+    height: 89vh;
   }
 }
