@@ -183,7 +183,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -192,7 +192,7 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   font-size: 30px;
   margin: 1px;
   border: solid 1px #fff;
-  width: 1920px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.199);
 }
 .mail {
@@ -211,10 +211,9 @@ input.selecteur-3:checked ~ .contenu .slider > li:nth-child(3) {
   }
 }
 .subnav {
-  position: absolute;
   z-index: 1;
   margin-top: 50px;
-  width: 1920px;
+  width: 100%;
   border: solid 1px #fff;
   background: #fff;
   display: flex;
