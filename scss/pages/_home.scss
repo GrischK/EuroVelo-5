@@ -521,9 +521,30 @@ main{
                 .temoignage_bloc{
                     width: 30%;
                     .cycliste2{
-                        height: 190px;
+                        height: 150px;
                         width: 100%;
                     }
+                    #bloc_info_temoignage{
+                        top:0px;
+                        h2{
+                            font-size: 18px;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #PartezEnVoyage_photos{
+            div{
+                .cycliste1{
+                    height: 160px;
+                }
+                h1{
+                    font-size: 18px;
+                    top: 0px;
                 }
             }
         }
