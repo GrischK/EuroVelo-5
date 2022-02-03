@@ -27,6 +27,29 @@ form{
     margin-bottom: 2%;
 }
 
+.BoutonTransparent a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+.BoutonTransparent a:link{ 
+ text-decoration:none; 
+} 
+
 button:hover{
     cursor: pointer; 
+}
+
+#more{
+    @include button;
+    color: $CouleurBoutonsVert;
+    border: 1px solid $CouleurBoutonsVert;
+    background-color: white;
+}
+
+#contact_us{
+    @include button;
+    color: $PoliceBlanche;
+    border: 1px solid $CouleurBoutonsVert;
+    background-color: $CouleurBoutonsVert;
 }

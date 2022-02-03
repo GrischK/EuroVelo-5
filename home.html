@@ -1,209 +1,262 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/main.css">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
-</head>
-<body>    
-    <header class="head">
-        <nav>
-            <ul class="nav">
-                <li>
-                <a href="https://www.instagram.com/?hl=fr" target="_blank"
-                    ><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                <a href="https://www.facebook.com/" target="_blank"
-                    ><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                <a href="https://www.youtube.com/" target="_blank"
-                    ><i class="fab fa-youtube"></i></a>
-                </li>
-                <li class="mail">
-                    S'abonner à la newsletter
-                    <input type="email" name="news" id="mail">
-                    <input type="submit" value="JE M'INSCRIS" id="submit">
-                </li>
-            </ul>
-            <ul class="subnav" id="menu"> 
-                <li id="enfant1">
-                    <a href="home.html"><img src="img/logo.png" alt=""></a>
-                </li>
-                <li id="enfant2">
-                    <a href="itineraire.html">L'ITINÉRAIRE</a>
-                </li>
-                <li id="enfant3">
-                    <a href="temoignage.html">TÉMOIGNAGES</a>
-                </li>
-                <li id="enfant4">
-                    <a href="infos-pratiques.html">INFOS PRATIQUES</a>
-                </li>
-                <li id="enfant5">
-                    <a href="news.html">NEWS</a>
-                </li>
-            </ul>
-            <div id="hamburger" class="inactive">&#9776;</div>
-            <div class="contenu">
-                <ul class="slider clearfix">
-                <li>
-                    <img
-                    src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg"
-                    alt="image01"
-                    />
-                </li>
-                <li>
-                    <img
-                    src="img/patrimoine-remarquable_news_image_top.jpg"
-                    alt="image02"
-                    />
-                </li>
-                <li><img src="img/St_omer_cathedrale_ND.jpg" alt="image03" /></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="scss/main.css">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    </head>
+    <body>    
+        <header class="head">
+            <nav>
+                <ul class="nav">
+                    <li>
+                    <a href="https://www.instagram.com/?hl=fr" target="_blank"
+                        ><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                    <a href="https://www.facebook.com/" target="_blank"
+                        ><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                    <a href="https://www.youtube.com/" target="_blank"
+                        ><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="mail">
+                        S'abonner à la newsletter
+                        <input type="email" name="news" id="mail">
+                        <input type="submit" value="JE M'INSCRIS" id="submit">
+                    </li>
                 </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <article class="BlocsReduits" id="BlocPresentationCarte">
-            <section id="presentation">
-                <h1>
-                    La VéloCharbon.
-                </h1>
-                <p>
-                    La VéloCharbon est un itinéraire qui part de Calais, jusqu’à Lille et la Belgique en passant par le marais Audomarois. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-                </p>
-                <img src="img/pictos-velodyssee3.jpg" alt="icones">
-                <form>
-                    <fieldset>
-                        <p>Pédalez selon vos envies</p>
-                        <label for="difficultes"></label>
-                        <select id="difficultes">
-                            <option value="">Toutes les difficultés</option>    
-                            <option value="debutant">Je débute/En famille</option>    
-                            <option value="intermediare">J'ai l'habitude</option>
-                            <option value="confirme">Je me dépasse</option>
-                        </select>
-                        <label for="duree"></label>
-                        <select id="duree">
-                            <option value="">Toutes les durées</option>    
-                            <option value="journee">Journée</option>    
-                            <option value="long">Long séjour (+7 jours)</option>
-                            <option value="semaine">A la semaine</option>
-                            <option value="court">Court séjour (3 à 5 jours)</option>
-                            <option value="weekend">Week-end</option>
-                        </select>
-                        <label for="thematiques"></label>
-                        <select id="thematiques">
-                            <option value="">Toutes les thématiques</option>    
-                            <option value="littoral">Le littoral</option>    
-                            <option value="nature">Nature et patrimoine</option>
-                            <option value="aufil">Au fil de l'eau</option>
-                            <option value="forets">Forêts et landes</option>
-                            <option value="famille">En famille</option>
-                            <option value="vignobles">Vignobles et gastronomie</option>
-                            <option value="Panoramas">Panoramas</option>
-                        </select>
-                        <button type="submit">Trouver mon parcours idéal</button>
-                    </fieldset>
-                </form>
-            </section>
-            <div id="map"></div>
-        </article>
-        <article id="TrouverVelo"  class="BlocsReduits">
-            <h1>
-                Trouver mon Accueil vélo
-            </h1>
-            <p>
-                Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de l'itinéraire
-            </p>
-            <ul class="blocs_en_ligne">
-                <li>
-                    <img src="img/velo1.jpg" alt="cycliste" class="TrouverMonVelo">
-                    <div class="TexteSurPhoto">Hébergements</div>
-                </li>
-                <li>
-                    <img src="img/velo2.jpg" alt="cycliste" class="TrouverMonVelo">
-                    <div class="TexteSurPhoto">Lieux de visite</div>
-                </li>
-                <li>
-                    <img src="img/velo3.jpg" alt="cycliste" class="TrouverMonVelo">
-                    <div class="TexteSurPhoto">Office de Tourisme</div>
-                </li>
-                <li>
-                    <img src="img/velo4.jpg" alt="cycliste" class="TrouverMonVelo">
-                    <div class="TexteSurPhoto">Loueurs et réparateurs de vélo</div>
-                </li>
-            </ul>
-        </article>
-        <article class="bloc_conteneur">
-            <img src="img/landscape.jpg" alt="landscape" class="landscape">
-            <div id="Experiences">
-                <h1>
-                    Ils l'ont fait
-                </h1>
-                <p>
-                    Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée. Inspirez-vous !
-                </p>
-                <section id="experiences_photos" class="temoignage_conteneur">
+                <ul class="subnav" id="menu"> 
+                    <li id="enfant1">
+                        <a href="home.html"><img src="img/logo.png" alt=""></a>
+                    </li>
+                    <li id="enfant2">
+                        <a href="itineraire.html">L'ITINÉRAIRE</a>
+                    </li>
+                    <li id="enfant3">
+                        <a href="temoignage.html">TÉMOIGNAGES</a>
+                    </li>
+                    <li id="enfant4">
+                        <a href="infos-pratiques.html">INFOS PRATIQUES</a>
+                    </li>
+                    <li id="enfant5">
+                        <a href="news.html">NEWS</a>
+                    </li>
+                </ul>
+                <div id="hamburger" class="inactive">&#9776;</div>
+                <div class="contenu">
+                    <ul class="slider clearfix">
+                    <li>
+                        <img
+                        src="img/B9724016803Z.1_20200716164949_000+GD1GB7220.1-0.jpg"
+                        alt="image01"
+                        />
+                    </li>
+                    <li>
+                        <img
+                        src="img/patrimoine-remarquable_news_image_top.jpg"
+                        alt="image02"
+                        />
+                    </li>
+                    <li><img src="img/St_omer_cathedrale_ND.jpg" alt="image03" /></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <article class="BlocsReduits" id="BlocPresentationCarte">
+                <section id="presentation">
+                    <h1>
+                        La VéloCharbon
+                    </h1>
+                    <p>
+                        La VéloCharbon est un itinéraire qui part de Calais, jusqu’à Lille et la Belgique en passant par le marais Audomarois. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                    </p>
+                    <img src="img/pictos-velodyssee3.jpg" alt="icones">
+                    <form>
+                        <fieldset>
+                            <p>Pédalez selon vos envies</p>
+                            <label for="difficultes"></label>
+                            <select id="difficultes">
+                                <option value="">Toutes les difficultés</option>    
+                                <option value="debutant">Je débute/En famille</option>    
+                                <option value="intermediare">J'ai l'habitude</option>
+                                <option value="confirme">Je me dépasse</option>
+                            </select>
+                            <label for="duree"></label>
+                            <select id="duree">
+                                <option value="">Toutes les durées</option>    
+                                <option value="journee">Journée</option>    
+                                <option value="long">Long séjour (+7 jours)</option>
+                                <option value="semaine">A la semaine</option>
+                                <option value="court">Court séjour (3 à 5 jours)</option>
+                                <option value="weekend">Week-end</option>
+                            </select>
+                            <label for="thematiques"></label>
+                            <select id="thematiques">
+                                <option value="">Toutes les thématiques</option>    
+                                <option value="littoral">Le littoral</option>    
+                                <option value="nature">Nature et patrimoine</option>
+                                <option value="aufil">Au fil de l'eau</option>
+                                <option value="forets">Forêts et landes</option>
+                                <option value="famille">En famille</option>
+                                <option value="vignobles">Vignobles et gastronomie</option>
+                                <option value="Panoramas">Panoramas</option>
+                            </select>
+                            <button type="submit">Trouver mon parcours idéal</button>
+                        </fieldset>
+                    </form>
                 </section>
-                <button class="BoutonTransparent">
-                    Tous les témoignages
-                </button>
-            </div>
-        </article>
-        <article class="BlocsContenuCentre BlocsReduits">
-            <h1>
-                Les derniers avis publiés !
-            </h1>
-            <p>
-                Les avis et commentaires de voyageurs à vélo sur nos parcours.<br>
-                N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
-            </p>
-            <section class="avis-section">
-                <div class="avis"></div>
-            </section>
-            
-        </article>
-        <article class="BlocsContenuCentre BlocsReduits">
-            <h1>
-                La douceur du Nord à portée de roues !
-            </h1>
-            <p>
-                Idées week-end, nouveautés et tutos pour s'élancer dans une aventure à vélo.
-            </p>
-            <section id="Grille_main">
-            </section>
-        </article>
-        <article class="bloc_conteneur">
-            <img src="img/landscape3.jpg" alt="landscape" class="landscape">
-            <div id="PartezEnVoyage">
+                <div id="map"></div>
+            </article>
+            <article id="TrouverVelo"  class="BlocsReduits">
                 <h1>
-                    Partez en voyage, ils organisent tout pour vous !
+                    Trouver mon Accueil vélo
                 </h1>
                 <p>
-                    Besoin d'aide pour organiser vos vacances ? Premier voyage à vélo ?
-                    Des agences de voyages spécialisées vélo vous proposent des séjours clés en main. Partez serein et l'esprit libre.
+                    Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de l'itinéraire
                 </p>
-                <section id="PartezEnVoyage_photos">
+                <ul class="blocs_en_ligne">
+                    <li>
+                        <img src="img/velo1.jpg" alt="cycliste" class="TrouverMonVelo">
+                        <div class="TexteSurPhoto">Hébergements</div>
+                    </li>
+                    <li>
+                        <img src="img/velo2.jpg" alt="cycliste" class="TrouverMonVelo">
+                        <div class="TexteSurPhoto">Lieux de visite</div>
+                    </li>
+                    <li>
+                        <img src="img/velo3.jpg" alt="cycliste" class="TrouverMonVelo">
+                        <div class="TexteSurPhoto">Office de Tourisme</div>
+                    </li>
+                    <li>
+                        <img src="img/velo4.jpg" alt="cycliste" class="TrouverMonVelo">
+                        <div class="TexteSurPhoto">Loueurs et réparateurs de vélo</div>
+                    </li>
+                </ul>
+            </article>
+            <article class="bloc_conteneur">
+                <img src="img/landscape.jpg" alt="landscape" class="landscape">
+                <div id="Experiences">
+                    <h1>
+                        Ils l'ont fait
+                    </h1>
+                    <p>
+                        Ces retours d'expérience sont précieux pour vous aider à préparer votre parcours sur La Vélodyssée. Inspirez-vous !
+                    </p>
+                    <section id="experiences_photos" class="temoignage_conteneur">
+                    </section>
+                    <button class="BoutonTransparent">
+                        Tous les témoignages
+                    </button>
+                </div>
+            </article>
+            <article class="BlocsContenuCentre BlocsReduits">
+                <h1>
+                    Les derniers avis publiés !
+                </h1>
+                <p>
+                    Les avis et commentaires de voyageurs à vélo sur nos parcours.<br>
+                    N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !
+                </p>
+                <section class="avis-section">
+                    <div class="avis"></div>
                 </section>
-                <button class="BoutonTransparent">
-                    Tous les séjours
-                </button>
-            </div>
-        </article>
-
-    </main>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
-    <script src="js/leaflet-providers.js"></script>
-    <script src="js/home.js"></script>
-</body>
+                
+            </article>
+            <article class="BlocsContenuCentre BlocsReduits">
+                <h1>
+                    La douceur du Nord à portée de roues !
+                </h1>
+                <p>
+                    Idées week-end, nouveautés et tutos pour s'élancer dans une aventure à vélo.
+                </p>
+                <section id="Grille_main">
+                </section>
+            </article>
+            <article class="bloc_conteneur">
+                <img src="img/landscape3.jpg" alt="landscape" class="landscape">
+                <div id="PartezEnVoyage">
+                    <h1>
+                        Partez en voyage, ils organisent tout pour vous !
+                    </h1>
+                    <p>
+                        Besoin d'aide pour organiser vos vacances ? Premier voyage à vélo ?
+                        Des agences de voyages spécialisées vélo vous proposent des séjours clés en main. Partez serein et l'esprit libre.
+                    </p>
+                    <section id="PartezEnVoyage_photos">
+                    </section>
+                    <button class="BoutonTransparent">
+                        Tous les séjours
+                    </button>
+                </div>
+            </article>
+            <footer>
+                <div id="logos_footer">
+                    <img src="img/Velodyssee.png" alt="logo_velodyssee" id="velodysse_footer">
+                    <div>
+                        <img src="img/insta.png" alt="instagram" class="social_media_footer">
+                        <img src="img/youtube.png" alt="youtube" class="social_media_footer">
+                        <img src="img/fb.png" alt="facebook" class="social_media_footer">
+                    </div>
+                </div>
+                <div id="footer_bottom">
+                    <div id="footer_text">
+                        <h1>
+                            Qui sommes-nous ? 
+                        </h1>
+                        <p>
+                            La Vélodyssée est un projet porté collectivement par 3 Régions et 9 Départements réunis autour d'une ambition commune : positionner La Vélodyssée comme un itinéraire d'excellence du tourisme à vélo en France et à l'étranger.
+                        </p>
+                    </div>
+                    <div id="footer_buttons">
+                        <button id="more">
+                            En savoir plus
+                        </button>
+                        <button id="contact_us">
+                            Nous contacter
+                        </button>
+                    </div>
+                </div>
+                <div id="footer2">
+                    <div id="mentions_legales">
+                        <section id="mentions_legales_liste">
+                            <ul>
+                                <li>
+                                    Mentions légales
+                                </li>
+                                <li>
+                                    Politique de confidentialité
+                                </li>
+                                <li>
+                                    Presse
+                                </li>
+                                <li>
+                                    Gestion des cookies
+                                </li>
+                            </ul>
+                        </section>
+                        <section id="real_by">
+                            <p>
+                                Réalisé par BGJJT Team
+                            </p>
+                            <img src="img/muscle.png" alt="muscles">
+                        </section>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+        <script src="js/leaflet-providers.js"></script>
+        <script src="js/home.js"></script>
+    </body>
 </html>
