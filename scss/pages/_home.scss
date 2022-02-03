@@ -375,6 +375,20 @@ main{
     width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+    .slider{
+        display: none;
+    }
+
+    .head{
+        z-index: 1;
+    }
+
+    .subnav {
+        position: fixed;
+    }
+}
+
 @media screen and (min-width: 600px) and (max-width: 900px) {
     main{
         #BlocPresentationCarte{
